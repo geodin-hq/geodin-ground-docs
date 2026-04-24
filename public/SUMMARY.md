@@ -1,9 +1,8 @@
 # Table of contents
 
-* [GeoDin® Ground](README.md)
-
 ## Getting Started
 
+* [Introduction](README.md)
 * [Installation](getting-started/installation.md)
 * [First steps](getting-started/first-steps.md)
 
