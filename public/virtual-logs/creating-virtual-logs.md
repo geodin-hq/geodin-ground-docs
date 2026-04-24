@@ -63,3 +63,16 @@ The newly created virtual log will appear visually similar to your real borehole
 
 
 By creating strategic virtual logs, you can enhance the accuracy of your geological models in areas where physical drilling data is unavailable. In the next tutorial, we will show how you can update your ground model (the surfaces and volumes) to reflect the newly added virtual logs.
+
+## Other creation modes
+
+This tutorial used the **Empty** option. GeoDin® Ground offers two additional creation modes for virtual logs:
+
+- [**Nearest Borehole**](creating-virtual-logs-nearest-borehole.md) — copies the stratigraphy from the closest real borehole. Useful when the target location is expected to resemble a neighbour.
+- [**Surface Interpolation**](creating-virtual-logs-surface-interpolation.md) — samples the currently generated ground model at the virtual log's location. Useful for locking in the model's current prediction as a constraint.
+
+## Tip — save and regenerate in one step
+
+After designing your virtual log, clicking **Add and refresh layer generation** saves the log and immediately regenerates the surfaces and volumes to reflect it. This avoids a separate trip back to **Draw Surfaces and Volumes** when you are iterating quickly. See [Updating the ground model](updating-surfaces.md) for the full regeneration flow.
+
+> ⚠️ Virtual logs — whether Empty, Nearest Borehole, or Surface Interpolation — are **not persisted to the GeoDin® database**. They exist only in the current Civil 3D drawing.

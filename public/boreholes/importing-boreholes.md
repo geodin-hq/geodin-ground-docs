@@ -57,6 +57,17 @@ Once you have made your selection:
 
 <figure><img src="../.gitbook/assets/Picture5.png" alt=""><figcaption></figcaption></figure>
 
+> 💡 **Tip:** switch the Civil 3D visual style to **Shaded** to make the cylinders and layer colours easier to read. Use the **Layer Properties** panel to toggle annotations on or off, either for a single borehole or for all boreholes at once.
+
 \---
 
 You have now successfully imported and visualized boreholes from GeoDin in Civil 3D!
+
+## Troubleshooting
+
+**The boreholes don't appear, or appear in the wrong place.** Check that your Civil 3D drawing uses a coordinate reference system compatible with the one recorded against the boreholes in the GeoDin® database. A CRS mismatch can place boreholes thousands of kilometres away or at the wrong elevation. See [Troubleshooting](../support/troubleshooting.md) for the full checklist.
+
+## Related
+
+- [What comes across from the GeoDin® database](../documentation/what-comes-across.md) — the full list of what is and isn't rendered in Civil 3D.
+- [Creating surfaces and volumes](creating-surfaces-and-volumes.md) — the natural next step once boreholes are drawn.

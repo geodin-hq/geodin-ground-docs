@@ -31,3 +31,14 @@ Given these new boreholes next to the existing model, we simple have to press th
 | Example A: Edge Correction (result) | Example B: Extending Area |
 |---------|--------------|
 | <figure><img src="../.gitbook/assets/example-a-result.png" alt=""><figcaption></figcaption></figure> | <figure><img src="../.gitbook/assets/example-b-result.png" alt=""><figcaption></figcaption></figure> |
+
+## Save and regenerate in one step
+
+When creating a new virtual log, you can skip the separate regeneration step: in the Virtual Log Designer dialog, click **Add and refresh layer generation** instead of **Save to drawing**. The virtual log is saved and the ground model is rebuilt immediately, taking the new log into account. This is the fastest way to iterate when you are placing several virtual logs to refine a particular area.
+
+## What survives regeneration
+
+- **Boreholes and virtual logs** — these are the inputs and are preserved across every regeneration.
+- **Hand-edits made on the previous solids with Civil 3D tools** — these are **not** preserved. `Regenerate Ground Model` rebuilds the surfaces and volumes from scratch each time.
+
+If you want a change to survive regeneration, encode it as a [virtual log](what-are-virtual-logs.md) rather than editing the generated solid directly.

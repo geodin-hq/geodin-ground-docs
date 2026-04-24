@@ -16,6 +16,18 @@ Types of ground data visualized with GeoDin Ground:  
 - Data obtained from methods such as CPT investigations
 - 50+ classification and advanced geotechnical tests 
 
+## Where GeoDin® Ground fits
+
+GeoDin® Ground is one piece of the GeoDin® ecosystem:
+
+| Product | Role |
+|---|---|
+| **GeoDin®** | Desktop application and database — the source of truth for geotechnical data. |
+| **GeoDin® Ground** | Civil 3D plug-in — pulls borehole data from a GeoDin® database into the design environment (this site). |
+| **GeoDin® Onsite** | Windows-tablet field-capture tool — drillers fill in forms in the field; data uploads into a GeoDin® database. |
+
+For a detailed view of which workflows live in GeoDin® versus GeoDin® Ground, see [GeoDin® and GeoDin® Ground: where each fits](documentation/geodin-vs-ground-boundary.md).
+
 ## Screenshots and videos
 
 <figure><img src=".gitbook/assets/GeoDin_Ground_Draw_Boreholes_Basic.jpg" alt=""><figcaption></figcaption></figure>
