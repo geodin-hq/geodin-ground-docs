@@ -1,5 +1,7 @@
 # Creating Geological Surfaces and Volumes from Borehole Data in Civil 3D
 
+{% embed url="https://www.youtube.com/watch?v=62K8ztaJl1c" %}
+
 This tutorial guides you through the process of generating accurate geological surfaces and volumes in Civil 3D based on previously imported borehole data. You'll learn how to transform your borehole information into comprehensive 3D ground models.
 
 > **Note:** If you notice anything unusual or inaccurate with the 3D representation of surfaces and volumes, we'd appreciate your feedback to improve the experience. Please contact support@geodin.com, and our team will work with you to address any issues.
@@ -54,13 +56,19 @@ Once processing completes, you'll see the resulting surfaces and volumes display
 
 Take time to review the model from different angles to ensure it meets your project requirements.
 
+> ℹ️ **Native Civil 3D entities.** The generated surfaces and 3D solids are native Civil 3D objects. You can edit them with Civil 3D's own tools — cut, move, reshape, trim — without needing any GeoDin®-specific commands. Because there is **one 3D solid per soil layer**, Civil 3D's volume-calculation tools can give you quantities **by soil or rock unit**, not just against a single lumped surface.
+
+## Refining the result
+
+If the auto-interpolated model does not match what you know about the site, use [virtual logs](../virtual-logs/what-are-virtual-logs.md) rather than editing the solids by hand. Virtual logs re-feed your knowledge into the interpolator so that any future regeneration respects it. Hand-edits made with Civil 3D tools on the previous solids are lost when the ground model is regenerated; virtual logs survive.
+
 ## Next Steps
 
 With your geological surfaces and volumes created, you can now:
 
-- Export the model for further analysis
-- Generate reports on soil volumes and distributions
-- Use the surfaces for further Civil 3D design work
-- Make adjustments to the model as needed
+- [Overlay your design on the ground model](../documentation/overlaying-design-on-ground-model.md) — tunnel alignments, road corridors, bridges, pipelines.
+- [Hand the combined model off to BIM via IFC 4.3](../documentation/bim-ifc-handoff.md).
+- [Refine the model with virtual logs](../virtual-logs/what-are-virtual-logs.md).
+- Make adjustments to the model as needed.
 
 For additional assistance or to provide feedback on the surface generation process, please contact our support team.
