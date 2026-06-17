@@ -38,7 +38,7 @@ When creating a new virtual log, you can skip the separate regeneration step: in
 
 ## What survives regeneration
 
-- **Boreholes and virtual logs** — these are the inputs and are preserved across every regeneration.
-- **Hand-edits made on the previous solids with Civil 3D tools** — these are **not** preserved. `Regenerate Ground Model` rebuilds the surfaces and volumes from scratch each time.
+- **Boreholes and virtual logs** - these are the inputs and are preserved across every regeneration.
+- **Hand-edits made on the previous solids with Civil 3D tools** - these are **not** preserved. `Regenerate Ground Model` rebuilds the surfaces and volumes from scratch each time.
 
 If you want a change to survive regeneration, encode it as a [virtual log](what-are-virtual-logs.md) rather than editing the generated solid directly.

@@ -20,7 +20,7 @@ Use this when:
 3. Place the virtual log:
    - Type the coordinates in the command line, or
    - Click directly in the drawing where you want the virtual log to sit.
-4. The plug-in identifies the nearest real borehole and **copies its layer sequence** — soil or rock types, layer depths, and descriptions — into the Virtual Log Designer dialog.
+4. The plug-in identifies the nearest real borehole and **copies its layer sequence** - soil or rock types, layer depths, and descriptions - into the Virtual Log Designer dialog.
 5. Adjust the copied stratigraphy as needed:
    - Update individual layer properties (soil/rock type, depth).
    - Add new layers between existing ones, or remove layers that you know are not present at the new location.
@@ -28,11 +28,11 @@ Use this when:
 6. Set a unique **Name** and confirm the **Elevation** of the ground surface at the virtual log location.
 7. Click **Save to drawing** (or **Add and refresh layer generation** to save and immediately regenerate surfaces and volumes).
 
-The virtual log is drawn in the same style as real boreholes — a 3D cylinder with annotations — but remains distinguishable by its name.
+The virtual log is drawn in the same style as real boreholes - a 3D cylinder with annotations - but remains distinguishable by its name.
 
 ## After creating the virtual log
 
-- Re-run **Draw Surfaces and Volumes** — or use **Add and refresh layer generation** when saving — to rebuild the 3D ground model with the new log included. See [Updating the ground model](updating-surfaces.md).
+- Re-run **Draw Surfaces and Volumes** - or use **Add and refresh layer generation** when saving - to rebuild the 3D ground model with the new log included. See [Updating the ground model](updating-surfaces.md).
 - Virtual logs, including those created from the nearest borehole, are **not persisted to the GeoDin® database**. They exist only in the current Civil 3D drawing.
 
 ## When not to use Nearest Borehole

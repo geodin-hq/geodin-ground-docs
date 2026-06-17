@@ -8,12 +8,12 @@ This page is the quick reference for what you will and will not find in Civil 3D
 
 For each imported borehole, GeoDin® Ground brings across:
 
-- **Borehole identifier** — name or code as stored in the GeoDin® database.
-- **Coordinates** — X, Y, and the coordinate reference system (CRS) recorded against the borehole.
-- **Top elevation** — the ground-surface elevation at the borehole.
-- **Total depth** — how deep the borehole was drilled.
-- **Layered ground description** — each layer's top, bottom, soil unit, and description text, according to the standard used in the database (EN ISO 14688 / 14689, ASTM D2487, British 5930, Brazilian/Portuguese ABNT).
-- **Attached documents** — PDF logs, photos, and other files stored against the borehole in GeoDin®. You can open them from the ribbon without leaving Civil 3D.
+- **Borehole identifier** - name or code as stored in the GeoDin® database.
+- **Coordinates** - X, Y, and the coordinate reference system (CRS) recorded against the borehole.
+- **Top elevation** - the ground-surface elevation at the borehole.
+- **Total depth** - how deep the borehole was drilled.
+- **Layered ground description** - each layer's top, bottom, soil unit, and description text, according to the standard used in the database (EN ISO 14688 / 14689, ASTM D2487, British 5930, Brazilian/Portuguese ABNT).
+- **Attached documents** - PDF logs, photos, and other files stored against the borehole in GeoDin®. You can open them from the ribbon without leaving Civil 3D.
 
 From these inputs, GeoDin® Ground draws:
 
@@ -25,14 +25,14 @@ From these inputs, GeoDin® Ground draws:
 
 The following **are stored** in the GeoDin® database but are **not** visualised or made queryable inside Civil 3D by GeoDin® Ground:
 
-- **Sample and specimen records** — which samples were taken, at what depth, for what test programme.
-- **Classification and index test results** — particle size distribution, water content, Atterberg limits, and similar laboratory results.
-- **CPT detail** — full depth-indexed cone-penetration sequences.
+- **Sample and specimen records** - which samples were taken, at what depth, for what test programme.
+- **Classification and index test results** - particle size distribution, water content, Atterberg limits, and similar laboratory results.
+- **CPT detail** - full depth-indexed cone-penetration sequences.
 - **SPT values.**
 - **Groundwater level readings.**
 - **Borehole log reports** generated in GeoDin® (see below).
 
-If you need any of the above while working in Civil 3D, open the borehole's attached documents from the ribbon — the full PDF log and any test reports are usually attached there. For anything not attached, go back to GeoDin® for the full record.
+If you need any of the above while working in Civil 3D, open the borehole's attached documents from the ribbon - the full PDF log and any test reports are usually attached there. For anything not attached, go back to GeoDin® for the full record.
 
 ## Where these live
 

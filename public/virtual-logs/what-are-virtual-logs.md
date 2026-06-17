@@ -70,7 +70,7 @@ This central virtual log is particularly valuable for volume calculations, as it
 
 ## Injecting knowledge the boreholes don't capture
 
-A common reason to use a virtual log is not to fill a geometric gap but to **encode knowledge** that real boreholes do not capture. For example, if external tests or site observations show that a silt layer present in the real borehole set should **not** continue across the middle of the site, drop in a virtual log at that location without the silt layer and regenerate the ground model. The silt layer will be squeezed out of the interpolation in that area — the model now reflects what you know, not just what the boreholes alone suggest.
+A common reason to use a virtual log is not to fill a geometric gap but to **encode knowledge** that real boreholes do not capture. For example, if external tests or site observations show that a silt layer present in the real borehole set should **not** continue across the middle of the site, drop in a virtual log at that location without the silt layer and regenerate the ground model. The silt layer will be squeezed out of the interpolation in that area - the model now reflects what you know, not just what the boreholes alone suggest.
 
 This is the reason virtual logs survive regeneration while hand-edits on the generated solids do not: the virtual log acts as an **additional constraint** that future regenerations will respect.
 
@@ -78,6 +78,6 @@ This is the reason virtual logs survive regeneration while hand-edits on the gen
 
 In the next tutorials, we will guide you how to create virtual logs using our plugin. Three creation modes are available:
 
-- [**Empty**](creating-virtual-logs.md) — place the virtual log and enter the layer stack by hand.
-- [**Nearest Borehole**](creating-virtual-logs-nearest-borehole.md) — copy the stratigraphy from the closest real borehole and edit.
-- [**Surface Interpolation**](creating-virtual-logs-surface-interpolation.md) — sample the currently generated ground model at the virtual log's location, then edit.
+- [**Empty**](creating-virtual-logs.md) - place the virtual log and enter the layer stack by hand.
+- [**Nearest Borehole**](creating-virtual-logs-nearest-borehole.md) - copy the stratigraphy from the closest real borehole and edit.
+- [**Surface Interpolation**](creating-virtual-logs-surface-interpolation.md) - sample the currently generated ground model at the virtual log's location, then edit.

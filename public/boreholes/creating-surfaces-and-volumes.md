@@ -56,7 +56,7 @@ Once processing completes, you'll see the resulting surfaces and volumes display
 
 Take time to review the model from different angles to ensure it meets your project requirements.
 
-> ℹ️ **Native Civil 3D entities.** The generated surfaces and 3D solids are native Civil 3D objects. You can edit them with Civil 3D's own tools — cut, move, reshape, trim — without needing any GeoDin®-specific commands. Because there is **one 3D solid per soil layer**, Civil 3D's volume-calculation tools can give you quantities **by soil or rock unit**, not just against a single lumped surface.
+> ℹ️ **Native Civil 3D entities.** The generated surfaces and 3D solids are native Civil 3D objects. You can edit them with Civil 3D's own tools - cut, move, reshape, trim - without needing any GeoDin®-specific commands. Because there is **one 3D solid per soil layer**, Civil 3D's volume-calculation tools can give you quantities **by soil or rock unit**, not just against a single lumped surface.
 
 ## Refining the result
 
@@ -66,7 +66,7 @@ If the auto-interpolated model does not match what you know about the site, use 
 
 With your geological surfaces and volumes created, you can now:
 
-- [Overlay your design on the ground model](../documentation/overlaying-design-on-ground-model.md) — tunnel alignments, road corridors, bridges, pipelines.
+- [Overlay your design on the ground model](../documentation/overlaying-design-on-ground-model.md) - tunnel alignments, road corridors, bridges, pipelines.
 - [Hand the combined model off to BIM via IFC 4.3](../documentation/bim-ifc-handoff.md).
 - [Refine the model with virtual logs](../virtual-logs/what-are-virtual-logs.md).
 - Make adjustments to the model as needed.

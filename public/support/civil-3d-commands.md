@@ -30,7 +30,7 @@ Reference of the commands exposed by GeoDin® Ground in Civil 3D. Most are reach
 
 | Command | What it does |
 |---|---|
-| `GEODIN_CREATE_VIRTUAL_LOG` | Creates a virtual log with an empty stratigraphy — you enter the layers by hand. See [Creating Virtual Logs](../virtual-logs/creating-virtual-logs.md). |
+| `GEODIN_CREATE_VIRTUAL_LOG` | Creates a virtual log with an empty stratigraphy - you enter the layers by hand. See [Creating Virtual Logs](../virtual-logs/creating-virtual-logs.md). |
 | `GEODIN_CREATE_VIRTUAL_LOG_NEAREST_NEIGHBOUR` | Creates a virtual log by copying the stratigraphy of the nearest real borehole. See [Nearest Borehole](../virtual-logs/creating-virtual-logs-nearest-borehole.md). |
 | `GEODIN_CREATE_VIRTUAL_LOG_FROM_SURFACE_CONDITIONS` | Creates a virtual log by sampling the currently generated ground model at the chosen location. See [Surface Interpolation](../virtual-logs/creating-virtual-logs-surface-interpolation.md). |
 
