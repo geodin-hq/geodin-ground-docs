@@ -1,16 +1,16 @@
 # Known limitations and roadmap
 
-A transparent summary of what GeoDin® Ground does well today, what it deliberately does not do, and what is planned. Keep this page bookmarked — it is refreshed as the plug-in evolves.
+A transparent summary of what GeoDin® Ground does well today, what it deliberately does not do, and what is planned. Keep this page bookmarked - it is refreshed as the plug-in evolves.
 
 ## Known limitations today
 
 ### Import is one-way
 
-Edits made in Civil 3D — moving, deleting, or reshaping boreholes, surfaces, or solids — **do not propagate back** to the GeoDin® database. This is deliberate: Civil 3D drawings are easy to change by accident, and the GeoDin® database is protected from those changes. See [GeoDin® and GeoDin® Ground: where each fits](../documentation/geodin-vs-ground-boundary.md) for the rationale.
+Edits made in Civil 3D - moving, deleting, or reshaping boreholes, surfaces, or solids - **do not propagate back** to the GeoDin® database. This is deliberate: Civil 3D drawings are easy to change by accident, and the GeoDin® database is protected from those changes. See [GeoDin® and GeoDin® Ground: where each fits](../documentation/geodin-vs-ground-boundary.md) for the rationale.
 
 ### Layer matching has no semantic hints
 
-When `Draw Surfaces and Volumes` interpolates between boreholes, it matches layers by **soil type alone**. In geologically simple sites this works very well. In complex stratigraphies — where, for example, two distinct clay layers of different ages should not be bonded — the algorithm may connect them anyway.
+When `Draw Surfaces and Volumes` interpolates between boreholes, it matches layers by **soil type alone**. In geologically simple sites this works very well. In complex stratigraphies - where, for example, two distinct clay layers of different ages should not be bonded - the algorithm may connect them anyway.
 
 **Workaround today:** use [virtual logs](../virtual-logs/what-are-virtual-logs.md) to constrain the interpolation, or clean up the result with Civil 3D's own solid-editing tools.
 
@@ -26,7 +26,7 @@ GeoDin® Ground currently does not render samples, classification test results, 
 
 ### No dedicated cross-section command inside the plug-in
 
-To cut a cross-section through the ground model today, use Civil 3D's native alignment and section tools — intersect an alignment plane with the generated surfaces.
+To cut a cross-section through the ground model today, use Civil 3D's native alignment and section tools - intersect an alignment plane with the generated surfaces.
 
 ## Roadmap
 
@@ -34,11 +34,11 @@ The GeoDin® and Autodesk teams are collaborating on the following areas. This i
 
 ### Richer layer-matching input
 
-Let users tag layers with additional information — for example, **geological age**, **genesis**, or **depositional environment** — so the plug-in can match corresponding layers more reliably instead of bonding every layer with the same soil type. This is the primary improvement queued for complex stratigraphies.
+Let users tag layers with additional information - for example, **geological age**, **genesis**, or **depositional environment** - so the plug-in can match corresponding layers more reliably instead of bonding every layer with the same soil type. This is the primary improvement queued for complex stratigraphies.
 
 ### Native cross-section command
 
-A dedicated cross-section command inside GeoDin® Ground's ribbon — faster than the Civil 3D alignment + section workflow and tuned for geotechnical use.
+A dedicated cross-section command inside GeoDin® Ground's ribbon - faster than the Civil 3D alignment + section workflow and tuned for geotechnical use.
 
 ### Volumetric quantity calculations
 
@@ -50,4 +50,4 @@ Improved ability to combine geophysical datasets with borehole-derived ground mo
 
 ---
 
-For current release notes, see [Release Notes](release-notes.md). If there is a limitation that blocks your work, [let us know](get-support.md) — the team uses customer input directly to prioritise the roadmap.
+For current release notes, see [Release Notes](release-notes.md). If there is a limitation that blocks your work, [let us know](get-support.md) - the team uses customer input directly to prioritise the roadmap.

@@ -14,7 +14,7 @@ There is no special wiring between the two plug-ins. Each is installed independe
 
 ### Overlay GIS layers over your boreholes
 
-Once both plug-ins are loaded, you can pull layers from Esri's **Living Atlas** — or from your organisation's ArcGIS Online — into the Civil 3D drawing as reference:
+Once both plug-ins are loaded, you can pull layers from Esri's **Living Atlas** - or from your organisation's ArcGIS Online - into the Civil 3D drawing as reference:
 
 - Satellite imagery
 - Topography and hillshade
@@ -22,7 +22,7 @@ Once both plug-ins are loaded, you can pull layers from Esri's **Living Atlas** 
 - Hydrology and floodplain layers
 - Any shared layer your organisation publishes to ArcGIS Online
 
-With these layers underneath your borehole sticks, the geotechnical data is instantly placed in its real-world context — next to roads, rivers, protected areas, existing infrastructure.
+With these layers underneath your borehole sticks, the geotechnical data is instantly placed in its real-world context - next to roads, rivers, protected areas, existing infrastructure.
 
 ### Push a borehole (or the full set) to ArcGIS Online
 

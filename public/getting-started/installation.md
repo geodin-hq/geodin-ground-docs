@@ -6,7 +6,7 @@ GeoDin® Ground is distributed as a free plug-in on the **Autodesk App Store**. 
 
 * **Autodesk Civil 3D 2025** or **Autodesk Civil 3D 2026** installed and licensed.
 * **A GeoDin® database** containing the boreholes you want to visualise. The database can be a file-based Microsoft Access file (`.mdb` / `.accdb`) or a client/server database connection already configured in GeoDin®.
-* *(Optional)* GeoDin® itself installed on the same machine — useful for editing the underlying records, but not required to run GeoDin® Ground against an existing database.
+* *(Optional)* GeoDin® itself installed on the same machine - useful for editing the underlying records, but not required to run GeoDin® Ground against an existing database.
 
 > **No database yet?** The plug-in installer ships with a **Denver** sample database you can use to explore every command. It is also downloadable directly:
 >

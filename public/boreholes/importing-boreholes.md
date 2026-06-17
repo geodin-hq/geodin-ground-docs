@@ -69,5 +69,5 @@ You have now successfully imported and visualized boreholes from GeoDin in Civil
 
 ## Related
 
-- [What comes across from the GeoDin® database](../documentation/what-comes-across.md) — the full list of what is and isn't rendered in Civil 3D.
-- [Creating surfaces and volumes](creating-surfaces-and-volumes.md) — the natural next step once boreholes are drawn.
+- [What comes across from the GeoDin® database](../documentation/what-comes-across.md) - the full list of what is and isn't rendered in Civil 3D.
+- [Creating surfaces and volumes](creating-surfaces-and-volumes.md) - the natural next step once boreholes are drawn.

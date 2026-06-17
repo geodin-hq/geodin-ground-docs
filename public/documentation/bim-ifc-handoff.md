@@ -12,7 +12,7 @@ Civil 3D itself does not ship an IFC classification taxonomy for geotechnical un
 2. Map those layers to your preferred **IFC classification** (for example, an internal code or a publicly maintained geotechnical classification).
 3. Save this mapping as part of your project template so every export is consistent.
 
-Without that mapping, the ground solids still export geometrically — the BIM file will contain the correct shapes — but classification metadata will be generic and downstream consumers will not be able to filter or query by ground unit.
+Without that mapping, the ground solids still export geometrically - the BIM file will contain the correct shapes - but classification metadata will be generic and downstream consumers will not be able to filter or query by ground unit.
 
 ## What the IFC export contains
 
@@ -22,14 +22,14 @@ The IFC 4.3 export includes:
 - The Civil 3D design objects in the same drawing.
 - The layer and property mapping you configured (see above).
 
-The export is driven by Civil 3D's own IFC exporter — GeoDin® Ground does not add a separate command. You export the whole drawing as you normally would.
+The export is driven by Civil 3D's own IFC exporter - GeoDin® Ground does not add a separate command. You export the whole drawing as you normally would.
 
 > **Note:** IFC 4.3 is the current target. Earlier IFC schemas do not include geotechnical entities in a first-class way.
 
 ## When to use this handoff
 
 - You are delivering a **federated BIM** to an owner or main contractor.
-- The ground model needs to be **auditable** alongside the design — for example, on infrastructure programmes where ground risk is a contractual concern.
+- The ground model needs to be **auditable** alongside the design - for example, on infrastructure programmes where ground risk is a contractual concern.
 - Disciplines that do not use Civil 3D (structures, MEP, architecture) need visibility of the ground in their authoring tool.
 
 If the receiving side only needs a GIS view of the boreholes, see [ArcGIS integration](arcgis-integration.md) instead.
