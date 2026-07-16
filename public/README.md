@@ -1,6 +1,8 @@
 # GeoDin® Ground
 
 GeoDin® Ground is a plugin developed by GeoDin®  and Autodesk for civil and design engineers to see below the ground in Civil 3D. With the integration and visualization of ground data in Civil 3D, the information gap between ground and design is closed. [Download the plugin here from the Autodesk App Store](https://apps.autodesk.com/CIV3D/en/Detail/Index?id=7392344363451764169&appLang=en&os=Win64&mode=preview)
+<!-- CORRECTION-PROPOSED: Replace the "Download the plugin here from the Autodesk App Store" link target with the canonical Autodesk Marketplace URL https://marketplace.autodesk.com/apps/e980e6d6-57f3-4de3-b311-0da8181b0ff6 and update link text to "Autodesk Marketplace". Old URL still resolves to the same app but is not the current canonical link. -->
+<!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
 
 <figure><img src=".gitbook/assets/GeoDin_Ground_Draw_Boreholes_Advanced.jpg" alt=""><figcaption></figcaption></figure>
 

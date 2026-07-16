@@ -42,8 +42,12 @@ This has not been validated by GeoDin®. Run the database from a local drive or 
 ## The GeoDin® Ground ribbon doesn't show up in Civil 3D
 
 - Confirm you installed GeoDin® Ground against the Civil 3D version you actually launch (2025 or 2026). Installing against a different Civil 3D version does not register the ribbon.
+<!-- CORRECTION-PROPOSED: Compatible Civil 3D versions per Autodesk Marketplace listing are 2025, 2026, and 2027 (as of v1.6.22.0, 24 June 2026) — this line should read "(2025, 2026, or 2027)". -->
+<!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
 - Restart Civil 3D after installation.
 - Open the Autodesk App Store and check that the plug-in is listed as installed for this machine.
+<!-- CORRECTION-PROPOSED: Autodesk App Store has migrated to Autodesk Marketplace — update wording to "Open Autodesk Marketplace and check that the plug-in is listed as installed for this machine." -->
+<!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
 
 ## I regenerated the ground model but my changes are gone
 

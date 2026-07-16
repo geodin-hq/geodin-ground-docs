@@ -1,6 +1,16 @@
 
 # Release Notes
 
+## v1.6.22.0
+_Released: 24 June 2026_
+
+**What's New:**
+- Added compatibility with Autodesk Civil 3D 2027.
+
+> For the latest released version and full Civil 3D compatibility list at any time, see the [GeoDin® Ground listing on Autodesk Marketplace](https://marketplace.autodesk.com/apps/e980e6d6-57f3-4de3-b311-0da8181b0ff6).
+
+<!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
+
 ## v1.5.17
 _Released: 18 september, 2025_  
 **What's New:**

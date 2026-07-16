@@ -13,7 +13,8 @@ For each imported borehole, GeoDin® Ground brings across:
 - **Top elevation** - the ground-surface elevation at the borehole.
 - **Total depth** - how deep the borehole was drilled.
 - **Layered ground description** - each layer's top, bottom, soil unit, and description text, according to the standard used in the database (EN ISO 14688 / 14689, ASTM D2487, British 5930, Brazilian/Portuguese ABNT).
-- **Attached documents** - PDF logs, photos, and other files stored against the borehole in GeoDin®. You can open them from the ribbon without leaving Civil 3D.
+- **Attached documents** - PDF logs, photos, and other files stored against the borehole in GeoDin®. You can open them from the ribbon without leaving Civil 3D, using the integrated **GeoDin® Document Viewer**. See [Civil 3D Commands](../support/civil-3d-commands.md) for the full list of ribbon commands.
+<!-- src: adhoc/2026-07-16_website-drift -->
 
 From these inputs, GeoDin® Ground draws:
 
