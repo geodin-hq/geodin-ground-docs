@@ -1,6 +1,6 @@
 # Installation
 
-GeoDin® Ground is distributed as a free plug-in on the **Autodesk App Store**. The installer adds a **GeoDin® Ground** ribbon tab to Civil 3D with all plug-in commands.
+GeoDin® Ground is distributed as a free plug-in on the **Autodesk Marketplace**. The installer adds a **GeoDin® Ground** ribbon tab to Civil 3D with all plug-in commands.
 
 ### Prerequisites
 
