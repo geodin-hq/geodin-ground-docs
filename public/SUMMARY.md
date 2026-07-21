@@ -25,6 +25,9 @@
 * [Overlaying your design on the ground model](documentation/overlaying-design-on-ground-model.md)
 * [BIM handoff via IFC 4.3](documentation/bim-ifc-handoff.md)
 * [ArcGIS integration](documentation/arcgis-integration.md)
+  * [Bringing the ground model into ArcGIS Pro](documentation/arcgis-pro-ground-model.md)
+  * [Attaching reports to borehole annotations](documentation/arcgis-pro-attach-reports.md)
+  * [Publishing and reviewing a web scene](documentation/arcgis-web-scene.md)
 
 ## Reference
 
