@@ -33,7 +33,7 @@ For a detailed view of which workflows live in GeoDin® versus GeoDin® Ground, 
 
 <figure><img src=".gitbook/assets/GeoDin_Ground_Draw_Boreholes_Basic.jpg" alt=""><figcaption></figcaption></figure>
 <figure><img src=".gitbook/assets/GeoDin_Ground_Draw_Boreholes_Advanced.jpg" alt=""><figcaption></figcaption></figure>
-<figure><img src=".gitbook/assets/GeoDin_Ground_Location_Selector_1.jpg.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/GeoDin_Ground_Location_Selector_1.jpg" alt=""><figcaption></figcaption></figure>
 <figure><img src=".gitbook/assets/GeoDin_Ground_Location_Selector_2.jpg" alt=""><figcaption></figcaption></figure>
 <figure><img src=".gitbook/assets/GeoDin_Ground_Draw_Surfaces_Solids.jpg" alt=""><figcaption></figcaption></figure>
 <figure><img src=".gitbook/assets/GeoDin_Ground_Document_Viewer.jpg" alt=""><figcaption></figcaption></figure>

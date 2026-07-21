@@ -13,6 +13,9 @@ If the two do not match, boreholes can land thousands of kilometres away, on the
 
 If the boreholes appear in the right place but at the wrong height, check that the **top elevation** on the GeoDin® side uses the same vertical datum as your drawing.
 
+<!-- src: loom/arcgis-3d-B -->
+To set the drawing's CRS from the ArcGIS ribbon, see [Georeferencing the drawing](../documentation/arcgis-integration.md#georeferencing-the-drawing).
+
 ## Some of my layer colours look wrong
 
 Layer colour is mapped from the **ground-unit configuration** in your GeoDin® database into Civil 3D layer colours. Some of those mappings are currently hard-coded. If a particular unit is not picking up your preferred colour, adjust it directly on the Civil 3D layer after drawing. The mapping will be respected in subsequent regenerations in the same drawing.

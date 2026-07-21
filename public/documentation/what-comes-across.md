@@ -1,5 +1,12 @@
 # What comes across from the GeoDin® database
 
+{% embed url="https://www.youtube.com/watch?v=j9Wz8QRdB4Q" %}
+
+> **Video chapters:** 0:00 Database structure: projects, objects & boreholes · 0:25 Borehole general information · 0:44 Underground layer & investigation data · 1:10 2D borehole logs (CPT & PDF)
+
+<!-- src: loom/arcgis-3d-A -->
+
+
 GeoDin® Ground is a **visualisation layer** on top of your GeoDin® database. It deliberately pulls across only what is needed to draw a working 3D ground model inside Civil 3D. Everything else stays in GeoDin®, where the full geotechnical record lives.
 
 This page is the quick reference for what you will and will not find in Civil 3D after importing boreholes.
@@ -15,6 +22,7 @@ For each imported borehole, GeoDin® Ground brings across:
 - **Layered ground description** - each layer's top, bottom, soil unit, and description text, according to the standard used in the database (EN ISO 14688 / 14689, ASTM D2487, British 5930, Brazilian/Portuguese ABNT).
 - **Attached documents** - PDF logs, photos, and other files stored against the borehole in GeoDin®. You can open them from the ribbon without leaving Civil 3D, using the integrated **GeoDin® Document Viewer**. See [Civil 3D Commands](../support/civil-3d-commands.md) for the full list of ribbon commands.
 <!-- src: adhoc/2026-07-16_website-drift -->
+Documents can also be opened per borehole from the **Properties** palette - go to **Documentation > Reference Documents** and double-click an entry to open the PDF. <!-- src: loom/arcgis-3d-B -->
 
 From these inputs, GeoDin® Ground draws:
 

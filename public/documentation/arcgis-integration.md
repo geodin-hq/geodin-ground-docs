@@ -41,5 +41,30 @@ This is useful for steering committee reviews, public consultations, and cross-t
 | GIS-style 2D overlays behind the boreholes | ArcGIS for AutoCAD |
 | Sharing boreholes as a web map to non-CAD stakeholders | ArcGIS for AutoCAD (push to ArcGIS Online) |
 | Editing the underlying borehole record | GeoDin® (the desktop application) |
+<!-- src: loom/arcgis-3d-C -->
+| Bringing the full 3D ground model (not just points) into ArcGIS Pro | Open the Civil 3D drawing directly in an ArcGIS Pro Local Scene |
 
 The two plug-ins are complementary. You do not have to pick one: a typical workflow brings both into the same drawing, uses GeoDin® Ground for the 3D ground model, and uses ArcGIS for AutoCAD for 2D GIS context and outward sharing.
+
+## Georeferencing the drawing
+
+<!-- src: loom/arcgis-3d-B -->
+Before overlaying GIS layers or exporting the drawing to other tools, make sure the drawing itself carries the correct coordinate system:
+
+- On the **ArcGIS** ribbon in Civil 3D (ArcGIS for AutoCAD), choose **Coordinate System > Assign**.
+- Enter the drawing's coordinate system.
+- Save the drawing to persist the setting.
+
+This prevents CRS-mismatch issues when overlaying GIS layers or exporting the drawing later.
+
+## Taking the model further in ArcGIS Pro
+
+<!-- src: loom/arcgis-3d-C -->
+Beyond the two plug-ins above, there is a third integration path: open the saved Civil 3D drawing directly in ArcGIS Pro to work with the **full 3D ground model** — and take it all the way to a browser-based web scene. This is covered as a step-by-step tutorial series, from bringing the model in to sharing it with stakeholders:
+
+1. [Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md) — open the drawing in a Local Scene, navigate underground, and turn the raw annotation data into readable borehole labels.
+2. [Extracting boreholes, the model, and soil types](arcgis-pro-extract-features.md) — split the MultiPatch into separate feature classes per dataset using definition queries.
+3. [Attaching geotechnical reports to borehole annotations](arcgis-pro-attach-reports.md) — wire each borehole's PDF report to its document annotation with a matching key.
+4. [Publishing and reviewing the model as a web scene](arcgis-web-scene.md) — convert units, set the coordinate system, publish to ArcGIS Online, and review the model (including the Slice tool) in Scene Viewer.
+
+A public demo scene produced with this series is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3).

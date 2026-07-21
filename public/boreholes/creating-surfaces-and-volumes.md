@@ -56,7 +56,20 @@ Once processing completes, you'll see the resulting surfaces and volumes display
 
 Take time to review the model from different angles to ensure it meets your project requirements.
 
+<!-- src: loom/arcgis-3d-B -->
+> In the generated model, red dots mark the borehole locations.
+
 > ℹ️ **Native Civil 3D entities.** The generated surfaces and 3D solids are native Civil 3D objects. You can edit them with Civil 3D's own tools - cut, move, reshape, trim - without needing any GeoDin®-specific commands. Because there is **one 3D solid per soil layer**, Civil 3D's volume-calculation tools can give you quantities **by soil or rock unit**, not just against a single lumped surface.
+
+## Layer naming in the drawing
+
+<!-- src: loom/arcgis-3d-B -->
+The generated volume layers and borehole entries follow a fixed naming convention, visible in the **Layer Properties Manager** filter tree:
+
+- Volume layers are named with the prefix **VOL** plus the soil type in brackets, e.g. `VOL[SAND]`.
+- Borehole entries appear as layers named **LOC** followed by the borehole name, e.g. `LOC_BASE-BH12J-CPT12J-BASIC`.
+
+![GeoDin Ground layer groups in the Layer Properties Manager filter tree](../.gitbook/assets/GeoDin_Ground_Layer_Naming_Filter_Tree.jpg)
 
 ## Refining the result
 
