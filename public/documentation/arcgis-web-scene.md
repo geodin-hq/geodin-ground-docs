@@ -66,15 +66,20 @@ Open the published item with **Open in Scene Viewer**.
 
 <figure><img src="../.gitbook/assets/SV_03_On_The_Ground.png" alt=""><figcaption><p>Elevation placement options for the borehole points layer</p></figcaption></figure>
 
-- **Style the markers:** use the **3D Object** drawing style with a distinct color and label so boreholes are easy to identify against any basemap.
+- **Style the markers:** open **Layer Style** for the borehole points and use the **3D Object** drawing style with a distinct marker color and size, so boreholes are easy to identify against any basemap.
 
 <figure><img src="../.gitbook/assets/SV_04_3D_Style.png" alt=""><figcaption><p>3D Object drawing style for the borehole points</p></figcaption></figure>
 
-- **Slice the model:** with the **Slice** tool (under Scene tools; hold **Shift** for a vertical slice), cut into the model to inspect subsurface structure and borehole relationships, and capture the view as a slide for reporting.
+- **Pick an informative basemap:** open **Basemap** and choose a map with stronger geographic context (imagery, streets, topographic…) for the final review — then turn the model back on to see the subsurface against its surroundings.
 
-<figure><img src="../.gitbook/assets/Scene_Viewer_Slice_Slide.png" alt=""><figcaption><p>A vertical slice through the model, captured as a slide</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SV_05_Basemap_Gallery.png" alt=""><figcaption><p>Choosing a basemap with more geographic context</p></figcaption></figure>
 
-Esri's Scene Viewer documentation covers general navigation, styling, and slide capture.
+- **Slice the model:** with the **Slice** tool (under Scene tools; hold **Shift** for a vertical slice), cut into the model to inspect subsurface structure and borehole relationships. Adjust the slice angle until the internal features are clearly visible.
+- **Capture the view:** open **Slide Manager** and use **Capture slide** to save the current slice view — captured slides are stored with the scene, ready for reporting or the next stakeholder session.
+
+<figure><img src="../.gitbook/assets/Scene_Viewer_Slice_Slide.png" alt=""><figcaption><p>A vertical slice through the model, captured as a slide in Slide Manager</p></figcaption></figure>
+
+> ℹ️ **Off the shelf.** Everything in this section is standard Esri **Scene Viewer** functionality — no GeoDin®-specific setup or add-in is needed once the scene is published. Esri's Scene Viewer documentation covers every control here in full depth.
 
 ***
 
