@@ -39,6 +39,9 @@ After choosing a data connection and project:
 
 Once you have made your selection:
 
+<!-- src: loom/arcgis-3d-B -->
+> Civil 3D prompts that the drawing must be **saved** before any data can be imported - save it first if you have not already. After saving, GeoDin® Ground automatically creates a documents folder next to the drawing. It is structured by **project name**, with one subfolder per **borehole name**, holding the geotechnical documents attached to each borehole.
+
 * Press the **Draw boreholes** button.
 * The plugin retrieves the selected borehole data from GeoDin, including ground layer descriptions. Supported ground layer description standards include:
   * EN ISO 14688 / 146789
@@ -59,13 +62,16 @@ Once you have made your selection:
 
 > 💡 **Tip:** switch the Civil 3D visual style to **Shaded** to make the cylinders and layer colours easier to read. Use the **Layer Properties** panel to toggle annotations on or off, either for a single borehole or for all boreholes at once.
 
+<!-- src: loom/arcgis-3d-B -->
+> **Extended metadata:** select a borehole and open the **Properties** palette, then go to **Extended Data** for the full set of imported details, grouped as **Documentation**, **Coordinates** (including the EPSG code), **Drilling**, and **Location information**.
+
 \---
 
 You have now successfully imported and visualized boreholes from GeoDin in Civil 3D!
 
 ## Troubleshooting
 
-**The boreholes don't appear, or appear in the wrong place.** Check that your Civil 3D drawing uses a coordinate reference system compatible with the one recorded against the boreholes in the GeoDin® database. A CRS mismatch can place boreholes thousands of kilometres away or at the wrong elevation. See [Troubleshooting](../support/troubleshooting.md) for the full checklist.
+**The boreholes don't appear, or appear in the wrong place.** Check that your Civil 3D drawing uses a coordinate reference system compatible with the one recorded against the boreholes in the GeoDin® database. A CRS mismatch can place boreholes thousands of kilometres away or at the wrong elevation. See [Troubleshooting](../support/troubleshooting.md) for the full checklist. <!-- src: loom/arcgis-3d-B --> To set the drawing's CRS from the ArcGIS ribbon, see [Georeferencing the drawing](../documentation/arcgis-integration.md#georeferencing-the-drawing).
 
 ## Related
 
