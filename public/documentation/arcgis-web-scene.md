@@ -5,10 +5,10 @@
 
 {% embed url="https://www.youtube.com/watch?v=c1nneSVzYkw" %}
 
-> **Video chapters:** 0:00 Adding borehole location points & labels · 1:17 Converting annotation units to meters · 2:26 Setting the WGS 1984 coordinate system · 2:42 Publishing the web scene · 3:31 Viewing the published scene online
+> **Video chapters:** 0:00 Adding borehole location points & labels | 1:17 Converting annotation units to meters | 2:26 Setting the WGS 1984 coordinate system | 2:42 Publishing the web scene | 3:31 Viewing the published scene online
 
 
-The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser — no CAD or GIS software installed.
+The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser - no CAD or GIS software installed.
 
 Before preparing the scene, add the **Borehole** point feature class ([extracted from the MultiPatch](arcgis-pro-extract-features.md)) with a single symbol and the borehole-name label, so each location reads clearly on the ground surface.
 
@@ -16,17 +16,17 @@ Before preparing the scene, add the **Borehole** point feature class ([extracted
 
 Web scenes expect metric elevations. If the drawing's elevations are in feet:
 
-- Run the **Adjust 3D Z** geoprocessing tool with **Reverse Sign of Z Values = Maintain Z Orientation**, converting **From Feet → To Meters**.
+- Run the **Adjust 3D Z** geoprocessing tool with **Reverse Sign of Z Values = Maintain Z Orientation**, converting **From Feet > To Meters**.
 
 <figure><img src="../.gitbook/assets/AGP_Scene_01_Adjust3DZ.png" alt=""><figcaption><p>Adjust 3D Z converting feet to meters</p></figcaption></figure>
 
-- Then open **Layer Properties → Elevation** for the layer and set the vertical units to **Meters**. Zoom in afterwards to confirm the annotation sits correctly.
+- Then open **Layer Properties > Elevation** for the layer and set the vertical units to **Meters**. Zoom in afterwards to confirm the annotation sits correctly.
 
 <figure><img src="../.gitbook/assets/AGP_Scene_02_Elevation_Units.png" alt=""><figcaption><p>Layer elevation set to geometry z-values in meters</p></figcaption></figure>
 
 ## Step 2: Set the scene coordinate system
 
-- Open the scene's **Map Properties → Coordinate Systems** and select **WGS 1984 Web Mercator (auxiliary sphere)** — the coordinate system web scenes require.
+- Open the scene's **Map Properties > Coordinate Systems** and select **WGS 1984 Web Mercator (auxiliary sphere)** - the coordinate system web scenes require.
 
 <figure><img src="../.gitbook/assets/AGP_Scene_03_CRS.png" alt=""><figcaption><p>Scene coordinate system set to WGS 1984 Web Mercator</p></figcaption></figure>
 
@@ -49,7 +49,7 @@ Web scenes expect metric elevations. If the drawing's elevations are in feet:
 
 {% embed url="https://www.youtube.com/watch?v=xLdO-QAudk0" %}
 
-> **Video chapters:** 0:00 Opening the scene & making the basemap transparent · 0:36 Exploring borehole info & documents · 1:08 Viewing the model by soil type · 1:33 Adding borehole location points on the ground · 1:58 Styling markers & choosing a basemap · 3:07 Slicing the 3D model · 4:06 Capturing & saving a slice
+> **Video chapters:** 0:00 Opening the scene & making the basemap transparent | 0:36 Exploring borehole info & documents | 1:08 Viewing the model by soil type | 1:33 Adding borehole location points on the ground | 1:58 Styling markers & choosing a basemap | 3:07 Slicing the 3D model | 4:06 Capturing & saving a slice
 
 
 Open the published item with **Open in Scene Viewer**.
@@ -58,7 +58,7 @@ Open the published item with **Open in Scene Viewer**.
 
 <figure><img src="../.gitbook/assets/SV_01_Transparency.png" alt=""><figcaption><p>Ground transparency revealing the model below the surface</p></figcaption></figure>
 
-- **Toggle layers:** in **Layers**, switch soil-type volumes (clay, sand, chalk, limestone…) and boreholes on and off to focus the review. Clicking a document annotation opens its pop-up — including the attached geotechnical report.
+- **Toggle layers:** in **Layers**, switch soil-type volumes (clay, sand, chalk, limestone...) and boreholes on and off to focus the review. Clicking a document annotation opens its pop-up - including the attached geotechnical report.
 
 <figure><img src="../.gitbook/assets/Scene_Viewer_Model_Layers.png" alt=""><figcaption><p>Soil-type volume layers with boreholes in Scene Viewer</p></figcaption></figure>
 
@@ -70,17 +70,17 @@ Open the published item with **Open in Scene Viewer**.
 
 <figure><img src="../.gitbook/assets/SV_04_3D_Style.png" alt=""><figcaption><p>3D Object drawing style for the borehole points</p></figcaption></figure>
 
-- **Pick an informative basemap:** open **Basemap** and choose a map with stronger geographic context (imagery, streets, topographic…) for the final review — then turn the model back on to see the subsurface against its surroundings.
+- **Pick an informative basemap:** open **Basemap** and choose a map with stronger geographic context (imagery, streets, topographic...) for the final review - then turn the model back on to see the subsurface against its surroundings.
 
 <figure><img src="../.gitbook/assets/SV_05_Basemap_Gallery.png" alt=""><figcaption><p>Choosing a basemap with more geographic context</p></figcaption></figure>
 
 - **Slice the model:** with the **Slice** tool (under Scene tools; hold **Shift** for a vertical slice), cut into the model to inspect subsurface structure and borehole relationships. Adjust the slice angle until the internal features are clearly visible.
-- **Capture the view:** open **Slide Manager** and use **Capture slide** to save the current slice view — captured slides are stored with the scene, ready for reporting or the next stakeholder session.
+- **Capture the view:** open **Slide Manager** and use **Capture slide** to save the current slice view - captured slides are stored with the scene, ready for reporting or the next stakeholder session.
 
 <figure><img src="../.gitbook/assets/Scene_Viewer_Slice_Slide.png" alt=""><figcaption><p>A vertical slice through the model, captured as a slide in Slide Manager</p></figcaption></figure>
 
-> ℹ️ **Off the shelf.** Everything in this section is standard Esri **Scene Viewer** functionality — no GeoDin®-specific setup or add-in is needed once the scene is published. Esri's Scene Viewer documentation covers every control here in full depth.
+> ℹ️ **Off the shelf.** Everything in this section is standard Esri **Scene Viewer** functionality - no GeoDin®-specific setup or add-in is needed once the scene is published. Esri's Scene Viewer documentation covers every control here in full depth.
 
 ***
 
-> 🌐 **Try it live:** a public demo scene produced with this workflow is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3) — open it in Scene Viewer and explore the volumes, annotations, and Slice tool without setting anything up.
+> 🌐 **Try it live:** a public demo scene produced with this workflow is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3) - open it in Scene Viewer and explore the volumes, annotations, and Slice tool without setting anything up.

@@ -2,7 +2,7 @@
 
 {% embed url="https://www.youtube.com/watch?v=j9Wz8QRdB4Q" %}
 
-> **Video chapters:** 0:00 Database structure: projects, objects & boreholes · 0:25 Borehole general information · 0:44 Underground layer & investigation data · 1:10 2D borehole logs (CPT & PDF)
+> **Video chapters:** 0:00 Database structure: projects, objects & boreholes | 0:25 Borehole general information | 0:44 Underground layer & investigation data | 1:10 2D borehole logs (CPT & PDF)
 
 <!-- src: loom/arcgis-3d-A -->
 
