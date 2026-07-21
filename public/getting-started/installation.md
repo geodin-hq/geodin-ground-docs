@@ -4,8 +4,7 @@ GeoDin® Ground is distributed as a free plug-in on the **Autodesk App Store**. 
 
 ### Prerequisites
 
-* **Autodesk Civil 3D 2025** or **Autodesk Civil 3D 2026** installed and licensed.
-<!-- CORRECTION-PROPOSED: Autodesk Marketplace listing (fetched 2026-07-14, updated 24 June 2026, v1.6.22.0) states compatibility with Civil 3D 2025, 2026, AND 2027. This prerequisite line is missing 2027 — update to "Autodesk Civil 3D 2025, 2026, or 2027 installed and licensed." -->
+* **Autodesk Civil 3D 2025, 2026, or 2027** installed and licensed.
 <!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
 * **A GeoDin® database** containing the boreholes you want to visualise. The database can be a file-based Microsoft Access file (`.mdb` / `.accdb`) or a client/server database connection already configured in GeoDin®.
 * *(Optional)* GeoDin® itself installed on the same machine - useful for editing the underlying records, but not required to run GeoDin® Ground against an existing database.
@@ -16,11 +15,10 @@ GeoDin® Ground is distributed as a free plug-in on the **Autodesk App Store**. 
 
 ### Download and install the latest version
 
-<!-- CORRECTION-PROPOSED: Autodesk App Store listings have migrated to Autodesk Marketplace. Old URL apps.autodesk.com/CIV3D/en/Detail/Index?...id=7392344363451764169 still resolves to the same app but is no longer canonical — replace embed with https://marketplace.autodesk.com/apps/e980e6d6-57f3-4de3-b311-0da8181b0ff6 and update "Autodesk App Store" wording to "Autodesk Marketplace" throughout this section. -->
 <!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
-{% embed url="https://apps.autodesk.com/CIV3D/en/Detail/Index?appLang=en&id=7392344363451764169&mode=preview&os=Win64" %}
+{% embed url="https://marketplace.autodesk.com/apps/e980e6d6-57f3-4de3-b311-0da8181b0ff6" %}
 
-1. Open the Autodesk App Store and search for **GeoDin® Ground** (or use the link above).
+1. Open Autodesk Marketplace and search for **GeoDin® Ground** (or use the link above).
 2. Download and run the installer.
 3. Start or restart Civil 3D.
 4. A new **GeoDin® Ground** ribbon appears in Civil 3D. If you do not see it, confirm you installed against the Civil 3D version you actually launch, then restart Civil 3D.
