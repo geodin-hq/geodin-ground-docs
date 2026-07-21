@@ -39,11 +39,9 @@ Reference of the commands exposed by GeoDin® Ground in Civil 3D. Most are reach
 | Command | What it does |
 |---|---|
 | `GEODIN_OPEN_ALL_DOCUMENTS` | Opens the GeoDin® Document Viewer with all documents available in the connected database. |
-| `GEODIN_OPEN_ALL_DOCUMENTS_OFFLINE` | Opens the GeoDin® Document Viewer with all documents stored in Autodesk Construction Cloud. |
+| `GEODIN_OPEN_ALL_DOCUMENTS_OFFLINE` | Opens the GeoDin® Document Viewer with the documents exported next to the drawing - no GeoDin® database connection required. <!-- src: loom/arcgis-3d-B --> |
 | `GEODIN_OPEN_BOREHOLE_DOCUMENTS` | Opens the GeoDin® Document Viewer with the documents attached to the selected boreholes. |
-| `GEODIN_OPEN_BOREHOLE_DOCUMENTS_OFFLINE` | Opens the GeoDin® Document Viewer with the documents for the selected boreholes stored in Autodesk Construction Cloud. |
-
-<!-- CORRECTION-PROPOSED: Video B (Loom, June 2026) shows GEODIN_OPEN_ALL_DOCUMENTS_OFFLINE opening the locally exported GeoDin Ground documents folder (project → borehole → documents tree), not Autodesk Construction Cloud. The current "_OFFLINE = ACC" descriptions may be inverted or outdated — please verify against the current release. src: loom/arcgis-3d-B -->
+| `GEODIN_OPEN_BOREHOLE_DOCUMENTS_OFFLINE` | Opens the GeoDin® Document Viewer with the exported documents for the selected boreholes - no database connection required. |
 
 ## Commands not in the latest release
 

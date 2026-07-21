@@ -67,12 +67,12 @@ def extract_bh(layer):
 
 ## Step 6: Generate the match table
 
-- Run the **Generate Attachments Match Table** geoprocessing tool:
+- Run the **Generate Attachment Match Table** geoprocessing tool:
   - **Input Dataset**: the annotation layer (selected records).
   - **Input Folder**: the working folder with the PDFs.
   - **Key Field**: `AttachKey` — **Input Data Filter**: `*.pdf` — **Match Pattern**: **Prefix**.
 
-<figure><img src="../.gitbook/assets/AGP_Attach_08_Match_Table.png" alt=""><figcaption><p>Generate Attachments Match Table with Match Pattern set to Prefix</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/AGP_Attach_08_Match_Table.png" alt=""><figcaption><p>Generate Attachment Match Table with Match Pattern set to Prefix</p></figcaption></figure>
 
 ## Step 7: Add the attachments
 
