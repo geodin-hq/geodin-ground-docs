@@ -69,6 +69,8 @@ The generated volume layers and borehole entries follow a fixed naming conventio
 - Volume layers are named with the prefix **VOL** plus the soil type in brackets, e.g. `VOL[SAND]`.
 - Borehole entries appear as layers named **LOC** followed by the borehole name, e.g. `LOC_BASE-BH12J-CPT12J-BASIC`.
 
+![GeoDin Ground layer groups in the Layer Properties Manager filter tree](../.gitbook/assets/GeoDin_Ground_Layer_Naming_Filter_Tree.jpg)
+
 ## Refining the result
 
 If the auto-interpolated model does not match what you know about the site, use [virtual logs](../virtual-logs/what-are-virtual-logs.md) rather than editing the solids by hand. Virtual logs re-feed your knowledge into the interpolator so that any future regeneration respects it. Hand-edits made with Civil 3D tools on the previous solids are lost when the ground model is regenerated; virtual logs survive.

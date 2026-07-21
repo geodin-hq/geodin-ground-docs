@@ -65,8 +65,12 @@ Besides overlaying GIS layers inside Civil 3D, there is a third integration path
 - Start a **Local Scene** project and connect the project geodatabase.
 - In the **Catalog** pane, use **Add Folder Connection** to connect the folder where the Civil 3D drawing is saved.
 - From the drawing's feature classes, add the **MultiPatch** (the 3D ground model plus boreholes) to the map.
+
+![The MultiPatch feature class added to a Local Scene](../.gitbook/assets/ArcGIS_Pro_MultiPatch_Local_Scene.jpg)
 - For elevation, keep the default **WorldElevation3D** surface, or replace **Ground** with your own DEM (for example, a 1 m resolution dataset) for accurate alignment.
 - Enable **Navigate Underground** on the **Ground** elevation surface to view the subsurface.
+
+![Navigate Underground enabled, viewing the borehole columns below the surface](../.gitbook/assets/ArcGIS_Pro_Navigate_Underground.jpg)
 - The borehole text lives in a separate **TextPoint** feature class. Add it to the map, then use **Export Features** to save it into the project geodatabase (for example, as `BH_Annotation`), and remove the raw **TextPoint** layer before styling.
 - Style the annotation layer with a single symbol (for example, a thin line marker rotated 90°, in a distinct color) and label it using the **RefName** field.
 - Refine label placement as needed.
@@ -95,17 +99,27 @@ def extract_bh(layer):
     return None
 ```
 
+![Calculate Field with the extract_bh code block, applied to the selected records](../.gitbook/assets/ArcGIS_Pro_Calculate_AttachKey.png)
+
 - Enable **Attachments** on the feature class (**Properties > Manage**).
 - Run **Generate Attachments Match Table** (Key Field = `AttachKey`, Match Pattern = **Prefix**, filtered to `*.pdf`).
 - Run **Add Attachments** (Input Join Field = `OBJECTID`, Match Join Field = `MatchID`).
 - Verify the attachment via the feature's pop-up.
+
+![The geotechnical report attached to a document annotation, verified in the pop-up](../.gitbook/assets/ArcGIS_Pro_Attachment_Popup.png)
 
 For the same workflow starting from GeoDin®-exported point layers, see [Attach reports](https://docs.geodin.com/integrations-and-plug-ins/overview/attach-reports).
 
 ## Reviewing the model in a web scene
 
 <!-- src: loom/arcgis-3d-F -->
-The published model - soil-type volume layers (for example, clay, sand, chalk, limestone) plus boreholes - can be reviewed in **ArcGIS Online Scene Viewer** in the browser. Use the **Slice** tool (under **Scene tools**; hold **Shift** for a vertical slice) to cut into the model and inspect subsurface structure and borehole relationships. Slices can be captured as slides for reporting.
+The published model - soil-type volume layers (for example, clay, sand, chalk, limestone) plus boreholes - can be reviewed in **ArcGIS Online Scene Viewer** in the browser.
+
+![The soil-type volume model with boreholes in Scene Viewer](../.gitbook/assets/Scene_Viewer_Model_Layers.png)
+
+Use the **Slice** tool (under **Scene tools**; hold **Shift** for a vertical slice) to cut into the model and inspect subsurface structure and borehole relationships. Slices can be captured as slides for reporting.
+
+![A vertical slice through the model, captured as a slide](../.gitbook/assets/Scene_Viewer_Slice_Slide.png)
 
 Set the borehole point layer's elevation placement to **On the ground** so location markers sit on the surface instead of inside the model.
 

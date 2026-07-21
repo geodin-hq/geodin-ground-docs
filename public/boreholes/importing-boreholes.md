@@ -42,6 +42,8 @@ Once you have made your selection:
 <!-- src: loom/arcgis-3d-B -->
 > Civil 3D prompts that the drawing must be **saved** before any data can be imported - save it first if you have not already. After saving, GeoDin® Ground automatically creates a documents folder next to the drawing. It is structured by **project name**, with one subfolder per **borehole name**, holding the geotechnical documents attached to each borehole.
 
+![The Location Selector with the save-drawing prompt](../.gitbook/assets/GeoDin_Ground_Save_Prompt_Location_Selector.jpg)
+
 * Press the **Draw boreholes** button.
 * The plugin retrieves the selected borehole data from GeoDin, including ground layer descriptions. Supported ground layer description standards include:
   * EN ISO 14688 / 146789
@@ -64,6 +66,8 @@ Once you have made your selection:
 
 <!-- src: loom/arcgis-3d-B -->
 > **Extended metadata:** select a borehole and open the **Properties** palette, then go to **Extended Data** for the full set of imported details, grouped as **Documentation**, **Coordinates** (including the EPSG code), **Drilling**, and **Location information**.
+
+![Extended Data property groups in the Properties palette](../.gitbook/assets/GeoDin_Ground_Properties_Extended_Data.jpg)
 
 \---
 
