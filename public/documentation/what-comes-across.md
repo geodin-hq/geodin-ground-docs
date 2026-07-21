@@ -1,5 +1,12 @@
 # What comes across from the GeoDin® database
 
+{% embed url="https://www.youtube.com/watch?v=j9Wz8QRdB4Q" %}
+
+> **Video chapters:** 0:00 Database structure: projects, objects & boreholes · 0:25 Borehole general information · 0:44 Underground layer & investigation data · 1:10 2D borehole logs (CPT & PDF)
+
+<!-- src: loom/arcgis-3d-A -->
+
+
 GeoDin® Ground is a **visualisation layer** on top of your GeoDin® database. It deliberately pulls across only what is needed to draw a working 3D ground model inside Civil 3D. Everything else stays in GeoDin®, where the full geotechnical record lives.
 
 This page is the quick reference for what you will and will not find in Civil 3D after importing boreholes.

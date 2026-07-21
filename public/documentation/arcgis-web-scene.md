@@ -3,7 +3,14 @@
 <!-- src: loom/arcgis-3d-E -->
 <!-- src: loom/arcgis-3d-F -->
 
+{% embed url="https://www.youtube.com/watch?v=c1nneSVzYkw" %}
+
+> **Video chapters:** 0:00 Adding borehole location points & labels · 1:17 Converting annotation units to meters · 2:26 Setting the WGS 1984 coordinate system · 2:42 Publishing the web scene · 3:31 Viewing the published scene online
+
+
 The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser — no CAD or GIS software installed.
+
+Before preparing the scene, add the **Borehole** point feature class ([extracted from the MultiPatch](arcgis-pro-extract-features.md)) with a single symbol and the borehole-name label, so each location reads clearly on the ground surface.
 
 ## Step 1: Convert elevations to meters
 
@@ -39,6 +46,11 @@ Web scenes expect metric elevations. If the drawing's elevations are in feet:
 - Click **Share** to publish, allow processing to finish, then open the item's portal page and confirm all layers are present.
 
 ## Reviewing the scene in the browser
+
+{% embed url="https://www.youtube.com/watch?v=xLdO-QAudk0" %}
+
+> **Video chapters:** 0:00 Opening the scene & making the basemap transparent · 0:36 Exploring borehole info & documents · 1:08 Viewing the model by soil type · 1:33 Adding borehole location points on the ground · 1:58 Styling markers & choosing a basemap · 3:07 Slicing the 3D model · 4:06 Capturing & saving a slice
+
 
 Open the published item with **Open in Scene Viewer**.
 

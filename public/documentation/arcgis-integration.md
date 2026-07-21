@@ -63,7 +63,8 @@ This prevents CRS-mismatch issues when overlaying GIS layers or exporting the dr
 Beyond the two plug-ins above, there is a third integration path: open the saved Civil 3D drawing directly in ArcGIS Pro to work with the **full 3D ground model** — and take it all the way to a browser-based web scene. This is covered as a step-by-step tutorial series, from bringing the model in to sharing it with stakeholders:
 
 1. [Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md) — open the drawing in a Local Scene, navigate underground, and turn the raw annotation data into readable borehole labels.
-2. [Attaching geotechnical reports to borehole annotations](arcgis-pro-attach-reports.md) — wire each borehole's PDF report to its document annotation with a matching key.
-3. [Publishing and reviewing the model as a web scene](arcgis-web-scene.md) — convert units, set the coordinate system, publish to ArcGIS Online, and review the model (including the Slice tool) in Scene Viewer.
+2. [Extracting boreholes, the model, and soil types](arcgis-pro-extract-features.md) — split the MultiPatch into separate feature classes per dataset using definition queries.
+3. [Attaching geotechnical reports to borehole annotations](arcgis-pro-attach-reports.md) — wire each borehole's PDF report to its document annotation with a matching key.
+4. [Publishing and reviewing the model as a web scene](arcgis-web-scene.md) — convert units, set the coordinate system, publish to ArcGIS Online, and review the model (including the Slice tool) in Scene Viewer.
 
 A public demo scene produced with this series is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3).

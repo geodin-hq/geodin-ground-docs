@@ -1,5 +1,10 @@
 # Importing boreholes
 
+{% embed url="https://www.youtube.com/watch?v=m0C8esFHhuk" %}
+
+> **Video chapters:** 0:00 Loading GeoDin Ground data into Civil 3D · 0:32 Auto-generated document folders · 0:55 Viewing boreholes in 3D · 1:56 Opening linked borehole documents (PDF) · 2:41 Building 3D subsurface models · 3:18 Layers, volumes & soil-type filtering · 3:58 Adding all projects · 4:24 Geo-referencing with ArcGIS
+
+
 This tutorial walks you through importing borehole data from your GeoDin database and visualizing it in Autodesk Civil 3D using our plugin.
 
 ***

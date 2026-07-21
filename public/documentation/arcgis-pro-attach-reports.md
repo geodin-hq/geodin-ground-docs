@@ -2,6 +2,11 @@
 
 <!-- src: loom/arcgis-3d-D -->
 
+{% embed url="https://www.youtube.com/watch?v=34Gydh4vkws" %}
+
+> **Video chapters:** 0:00 How GeoDin organizes borehole report folders · 0:37 Finding document annotations · 1:14 Preparing the AttachKey field · 1:53 Selecting boreholes with linked documents · 2:25 Calculating the AttachKey values · 3:33 Enabling & generating attachment matches · 4:35 Adding the attachments · 5:34 Verifying the attached reports
+
+
 When a Civil 3D drawing with GeoDin® Ground boreholes is brought into ArcGIS Pro ([previous tutorial](arcgis-pro-ground-model.md)), the exported PDF reports can be attached to each borehole's document annotation — so the right geotechnical report opens from the right feature. This tutorial builds a matching key and runs the two geoprocessing tools that wire the PDFs to the annotations.
 
 > For the same workflow starting from GeoDin®-exported point layers (one record per borehole), see [Attach reports](https://docs.geodin.com/integrations-and-plug-ins/overview/attach-reports) in the GeoDin® documentation. The version below handles the Civil 3D annotation layer, where each borehole has **multiple** annotation records.

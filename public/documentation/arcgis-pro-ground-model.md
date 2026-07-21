@@ -2,6 +2,11 @@
 
 <!-- src: loom/arcgis-3d-C -->
 
+{% embed url="https://www.youtube.com/watch?v=CG-whR2czNc" %}
+
+> **Video chapters:** 0:00 Setting up a Local Scene · 0:30 Adding the Civil 3D drawing · 0:49 Loading the 3D model (MultiPatch) · 1:15 Adding ground & DEM elevation · 1:52 Navigating underground · 2:26 Adding borehole layer data (TextPoint) · 2:48 Exporting features · 3:11 Styling annotations · 4:19 Labeling boreholes · 4:52 Label placement
+
+
 This tutorial walks you through opening a Civil 3D drawing that contains GeoDin® Ground boreholes and 3D ground model geometry directly in ArcGIS Pro — bringing the full model, not just point features, into a 3D GIS scene with underground navigation and readable borehole annotations.
 
 **Before you start:** you need a saved Civil 3D drawing with imported boreholes ([Importing boreholes](../boreholes/importing-boreholes.md)) and, optionally, generated surfaces and volumes ([Creating surfaces and volumes](../boreholes/creating-surfaces-and-volumes.md)). Make sure the drawing is georeferenced ([Georeferencing the drawing](arcgis-integration.md#georeferencing-the-drawing)).
@@ -74,5 +79,6 @@ This tutorial walks you through opening a Civil 3D drawing that contains GeoDin�
 
 **Next steps:**
 
+- [Extract boreholes, the model, and soil types](arcgis-pro-extract-features.md) into separate feature classes.
 - [Attach geotechnical reports to the borehole annotations](arcgis-pro-attach-reports.md) so each document annotation carries its PDF.
 - [Publish and review the model as a web scene](arcgis-web-scene.md) for browser-based stakeholder review.
