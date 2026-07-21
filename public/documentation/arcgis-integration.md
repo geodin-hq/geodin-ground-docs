@@ -109,4 +109,6 @@ The published model - soil-type volume layers (for example, clay, sand, chalk, l
 
 Set the borehole point layer's elevation placement to **On the ground** so location markers sit on the surface instead of inside the model.
 
+> 🌐 **Try it live:** a public demo scene produced with this workflow is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3) — open it in Scene Viewer to explore the soil-type volumes, borehole annotations, and the Slice tool without setting anything up. <!-- src: loom/arcgis-3d-F -->
+
 Esri's Scene Viewer documentation covers general navigation, styling, and slide capture.
