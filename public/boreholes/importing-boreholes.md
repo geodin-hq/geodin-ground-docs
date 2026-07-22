@@ -2,7 +2,7 @@
 
 {% embed url="https://www.youtube.com/watch?v=m0C8esFHhuk" %}
 
-> **Video chapters:** 0:00 Loading GeoDin Ground data into Civil 3D · 0:32 Auto-generated document folders · 0:55 Viewing boreholes in 3D · 1:56 Opening linked borehole documents (PDF) · 2:41 Building 3D subsurface models · 3:18 Layers, volumes & soil-type filtering · 3:58 Adding all projects · 4:24 Geo-referencing with ArcGIS
+> **Video chapters:** 0:00 Loading GeoDin Ground data into Civil 3D | 0:32 Auto-generated document folders | 0:55 Viewing boreholes in 3D | 1:56 Opening linked borehole documents (PDF) | 2:41 Building 3D subsurface models | 3:18 Layers, volumes & soil-type filtering | 3:58 Adding all projects | 4:24 Geo-referencing with ArcGIS
 
 
 This tutorial walks you through importing borehole data from your GeoDin database and visualizing it in Autodesk Civil 3D using our plugin.
@@ -13,13 +13,13 @@ This tutorial walks you through importing borehole data from your GeoDin databas
 
 {% embed url="https://www.youtube.com/watch?v=j9Wz8QRdB4Q" %}
 
-> **Video chapters:** 0:00 Database structure: projects, objects & boreholes · 0:25 Borehole general information · 0:44 Underground layer & investigation data · 1:10 2D borehole logs (CPT & PDF)
+> **Video chapters:** 0:00 Database structure: projects, objects & boreholes | 0:25 Borehole general information | 0:44 Underground layer & investigation data | 1:10 2D borehole logs (CPT & PDF)
 
 A two-minute recap of the data side you are about to import:
 
 - A GeoDin® database is organized by **project**; each project holds **objects**, and each object is a **borehole** (or CPT).
-- Every borehole carries **general data** — name, method, depth, and the coordinate system (EPSG) that Civil 3D will need.
-- The core of the record is the **layered ground description** — depths, soil types, and materials per layer.
+- Every borehole carries **general data** - name, method, depth, and the coordinate system (EPSG) that Civil 3D will need.
+- The core of the record is the **layered ground description** - depths, soil types, and materials per layer.
 - Boreholes can have a **2D borehole log (PDF)** attached, which travels along into the document workflows below.
 
 For the full data model, see [What comes across from the GeoDin® database](../documentation/what-comes-across.md) and the [GeoDin® documentation](https://docs.geodin.com/workspace-and-data-management).

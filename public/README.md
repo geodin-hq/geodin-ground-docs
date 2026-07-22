@@ -9,11 +9,11 @@ GeoDin® Ground is a plugin developed by GeoDin®  and Autodesk for civil and de
 
 GeoDin® Ground is a comprehensive solution offered to tackle the challenges faced by design teams and geotechnical engineers.Traditional methods of incorporating ground data into designs relied a lot on using separate sources of data and file types. GeoDin® offers you the possibility of having a single source of truth for your geodata. With GeoDin® Ground, you are able to directly access this data in Civil 3D. This allows you to create designs that are safe, efficient, effective and maximize sustainability, as the risk for overengineering is limited.
 
-Types of ground data visualized with GeoDin Ground:    
+Types of ground data visualized with GeoDin Ground:    
 
 - Borehole information   
-- Standard-compliant lithological layer descriptions    
-- Sample data  
+- Standard-compliant lithological layer descriptions    
+- Sample data  
 - Data obtained from methods such as CPT investigations
 - 50+ classification and advanced geotechnical tests 
 
