@@ -8,11 +8,15 @@
 > **Video chapters:** 0:00 Adding borehole location points & labels | 1:17 Converting annotation units to meters | 2:26 Setting the WGS 1984 coordinate system | 2:42 Publishing the web scene | 3:31 Viewing the published scene online
 
 
-The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser - no CAD or GIS software installed. Publishing requires an ArcGIS Online account with publishing privileges. For the 2D point-feature equivalent of this workflow, see [Publish to ArcGIS Online](https://docs.geodin.com/integrations-and-plug-ins/overview/publish-to-arcgis-online) in the GeoDin documentation.
+The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser - no CAD or GIS software installed. For the 2D point-feature equivalent of this workflow, see [Publish to ArcGIS Online](https://docs.geodin.com/integrations-and-plug-ins/overview/publish-to-arcgis-online) in the GeoDin documentation.
 
-Before preparing the scene, add the **Borehole** point feature class ([extracted from the MultiPatch](arcgis-pro-extract-features.md)) with a single symbol and the borehole-name label, so each location reads clearly on the ground surface.
+## Requirements
 
-## Step 1: Convert elevations to meters
+- The ground model and annotation layers in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)).
+- The **Borehole** point feature class ([extracted from the MultiPatch](arcgis-pro-extract-features.md)), added with a single symbol and the borehole-name label so each location reads clearly on the ground surface.
+- An ArcGIS Online account with publishing privileges.
+
+### Step 1: Convert elevations to meters
 
 Web scenes expect metric elevations. If the drawing's elevations are in feet:
 
@@ -24,20 +28,20 @@ Web scenes expect metric elevations. If the drawing's elevations are in feet:
 
 <figure><img src="../.gitbook/assets/AGP_Scene_02_Elevation_Units.png" alt=""><figcaption><p>Layer elevation set to geometry z-values in meters</p></figcaption></figure>
 
-## Step 2: Set the scene coordinate system
+### Step 2: Set the scene coordinate system
 
 - Open the scene's **Map Properties > Coordinate Systems** and select **WGS 1984 Web Mercator (auxiliary sphere)** - the coordinate system web scenes require.
 
 <figure><img src="../.gitbook/assets/AGP_Scene_03_CRS.png" alt=""><figcaption><p>Scene coordinate system set to WGS 1984 Web Mercator</p></figcaption></figure>
 
-## Step 3: Share the web scene
+### Step 3: Share the web scene
 
 - On the **Share** tab, choose **Web Scene**.
 - Enter a name, pick the destination folder, and set the sharing level (owner, organization, or public).
 
 <figure><img src="../.gitbook/assets/AGP_Scene_04_Share.png" alt=""><figcaption><p>The Share As Web Scene pane</p></figcaption></figure>
 
-## Step 4: Analyze, publish, verify
+### Step 4: Analyze, publish, verify
 
 - Click **Analyze** and resolve every error before publishing.
 
