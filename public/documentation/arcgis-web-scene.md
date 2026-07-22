@@ -8,7 +8,7 @@
 > **Video chapters:** 0:00 Adding borehole location points & labels | 1:17 Converting annotation units to meters | 2:26 Setting the WGS 1984 coordinate system | 2:42 Publishing the web scene | 3:31 Viewing the published scene online
 
 
-The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser - no CAD or GIS software installed.
+The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcgis-pro-ground-model.md)) can be published as an **ArcGIS Online web scene**, so stakeholders review soil-type volumes, boreholes, and attached reports directly in a browser - no CAD or GIS software installed. Publishing requires an ArcGIS Online account with publishing privileges. For the 2D point-feature equivalent of this workflow, see [Publish to ArcGIS Online](https://docs.geodin.com/integrations-and-plug-ins/overview/publish-to-arcgis-online) in the GeoDin documentation.
 
 Before preparing the scene, add the **Borehole** point feature class ([extracted from the MultiPatch](arcgis-pro-extract-features.md)) with a single symbol and the borehole-name label, so each location reads clearly on the ground surface.
 

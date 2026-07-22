@@ -55,7 +55,7 @@ After choosing a data connection and project:
 
 <figure><img src="../.gitbook/assets/Picture4.png" alt=""><figcaption></figcaption></figure>
 
-\---
+***
 
 ## Drawing Boreholes in Civil 3D
 
@@ -91,7 +91,7 @@ Once you have made your selection:
 
 ![Extended Data property groups in the Properties palette](../.gitbook/assets/GeoDin_Ground_Properties_Extended_Data.jpg)
 
-\---
+***
 
 You have now successfully imported and visualized boreholes from GeoDin in Civil 3D!
 

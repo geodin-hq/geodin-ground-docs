@@ -40,7 +40,7 @@ This is useful for steering committee reviews, public consultations, and cross-t
 | 3D visualisation and design integration of ground data | GeoDin® Ground |
 | GIS-style 2D overlays behind the boreholes | ArcGIS for AutoCAD |
 | Sharing boreholes as a web map to non-CAD stakeholders | ArcGIS for AutoCAD (push to ArcGIS Online) |
-| Editing the underlying borehole record | GeoDin® (the desktop application) |
+| Editing the underlying borehole record | GeoDin® (the desktop application) - for the 2D point-feature workflow see the [ArcGIS integration series](https://docs.geodin.com/integrations-and-plug-ins/overview) in the GeoDin docs |
 <!-- src: loom/arcgis-3d-C -->
 | Bringing the full 3D ground model (not just points) into ArcGIS Pro | Open the Civil 3D drawing directly in an ArcGIS Pro Local Scene |
 

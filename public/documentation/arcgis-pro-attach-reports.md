@@ -61,7 +61,7 @@ def extract_bh(layer):
 
 ## Step 5: Enable attachments
 
-- Open the feature class **Properties > Manage** and enable **Attachments**. Save.
+- Open the feature class **Properties > Manage** and enable **Attachments** (attachments are a geodatabase feature - the annotation layer must be a geodatabase feature class, not a shapefile). Save.
 
 <figure><img src="../.gitbook/assets/AGP_Attach_07_Enable_Attachments.png" alt=""><figcaption><p>Attachments enabled on the feature class</p></figcaption></figure>
 
