@@ -33,7 +33,7 @@ To start, select the borehole data you want to import and draw.
 * Existing data connections are automatically discovered if GeoDin is installed.
 * If you have no existing connections, click the **Manage data sources** button in the ribbon to add or configure connections.
 * Click the **Select data** button in the ribbon to open the selection dialog.\
-  &#xNAN;_&#x59;ou can move this dialog to a secondary screen for convenience._
+  _You can move this dialog to a secondary screen for convenience._
 
 **In the selection dialog:**
 
@@ -62,7 +62,9 @@ After choosing a data connection and project:
 Once you have made your selection:
 
 <!-- src: loom/arcgis-3d-B -->
-> Civil 3D prompts that the drawing must be **saved** before any data can be imported - save it first if you have not already. After saving, GeoDin® Ground automatically creates a documents folder next to the drawing. It is structured by **project name**, with one subfolder per **borehole name**, holding the geotechnical documents attached to each borehole.
+{% hint style="info" %}
+Civil 3D prompts that the drawing must be **saved** before any data can be imported - save it first if you have not already. After saving, GeoDin® Ground automatically creates a documents folder next to the drawing. It is structured by **project name**, with one subfolder per **borehole name**, holding the geotechnical documents attached to each borehole.
+{% endhint %}
 
 ![The Location Selector with the save-drawing prompt](../.gitbook/assets/GeoDin_Ground_Save_Prompt_Location_Selector.jpg)
 
@@ -72,7 +74,7 @@ Once you have made your selection:
   * ASTM D2487
   * British 5930
   * Brazilian/Portuguese ABNT\
-    &#xNAN;_&#x49;f multiple description standards are present in a single borehole, the first one (alphabetically) is used._
+    _If multiple description standards are present in a single borehole, the first one (alphabetically) is used._
 * After processing, close the dialog to view the imported boreholes in Civil 3D.
 
 **Visualization in Civil 3D:**
@@ -84,10 +86,14 @@ Once you have made your selection:
 
 <figure><img src="../.gitbook/assets/Picture5.png" alt=""><figcaption></figcaption></figure>
 
-> 💡 **Tip:** switch the Civil 3D visual style to **Shaded** to make the cylinders and layer colours easier to read. Use the **Layer Properties** panel to toggle annotations on or off, either for a single borehole or for all boreholes at once.
+{% hint style="info" %}
+**Tip:** switch the Civil 3D visual style to **Shaded** to make the cylinders and layer colours easier to read. Use the **Layer Properties** panel to toggle annotations on or off, either for a single borehole or for all boreholes at once.
+{% endhint %}
 
 <!-- src: loom/arcgis-3d-B -->
-> **Extended metadata:** select a borehole and open the **Properties** palette, then go to **Extended Data** for the full set of imported details, grouped as **Documentation**, **Coordinates** (including the EPSG code), **Drilling**, and **Location information**.
+{% hint style="info" %}
+**Extended metadata:** select a borehole and open the **Properties** palette, then go to **Extended Data** for the full set of imported details, grouped as **Documentation**, **Coordinates** (including the EPSG code), **Drilling**, and **Location information**.
+{% endhint %}
 
 ![Extended Data property groups in the Properties palette](../.gitbook/assets/GeoDin_Ground_Properties_Extended_Data.jpg)
 

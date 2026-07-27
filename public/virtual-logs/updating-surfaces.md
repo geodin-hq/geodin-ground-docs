@@ -1,6 +1,6 @@
 # Updating the ground model
 
-When working with geotechnical data in Civil3D, you may need to update your ground model after adding virtual logs or importing new boreholes. This tutorial walks you through the process of updating surfaces and volumes to reflect these changes in your geotechnical design.
+When working with geotechnical data in Civil 3D, you may need to update your ground model after adding virtual logs or importing new boreholes. This tutorial walks you through the process of updating surfaces and volumes to reflect these changes in your geotechnical design.
 
 ## When to update surfaces and volumes
 

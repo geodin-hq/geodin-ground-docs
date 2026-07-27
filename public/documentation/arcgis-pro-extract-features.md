@@ -8,7 +8,7 @@
 
 The MultiPatch brought in from the Civil 3D drawing ([previous tutorial](arcgis-pro-ground-model.md)) holds everything in one feature class: boreholes, the full 3D model, and every soil layer. This tutorial splits it into clean, separate feature classes - one for the boreholes, one for the model, one per soil type - so each can be reviewed, styled, shared, and analyzed independently. The later tutorials build on these outputs: the **Borehole** point class becomes the location markers in the [web scene](arcgis-web-scene.md).
 
-### Step 1: Read the layer naming convention
+## Step 1: Read the layer naming convention
 
 - Open the MultiPatch attribute table and locate the **Layer** field.
 - The names follow the GeoDin® Ground convention (see [Layer naming in the drawing](../boreholes/creating-surfaces-and-volumes.md#layer-naming-in-the-drawing)):
@@ -18,7 +18,7 @@ The MultiPatch brought in from the Civil 3D drawing ([previous tutorial](arcgis-
 
 <figure><img src="../.gitbook/assets/AGP_Extract_01_MultiPatch_Attributes.jpeg" alt=""><figcaption><p>The Layer field with LOC-prefixed borehole records</p></figcaption></figure>
 
-### Step 2: Isolate the boreholes with a definition query
+## Step 2: Isolate the boreholes with a definition query
 
 - Right-click the MultiPatch layer > **Properties > Definition Query**.
 - Add a query: **Layer begins with** `LOC_`.
@@ -26,7 +26,7 @@ The MultiPatch brought in from the Civil 3D drawing ([previous tutorial](arcgis-
 
 <figure><img src="../.gitbook/assets/AGP_Extract_02_DefQuery_LOC.png" alt=""><figcaption><p>Definition query filtering to LOC_ records</p></figcaption></figure>
 
-### Step 3: Export the boreholes
+## Step 3: Export the boreholes
 
 - With the query active, run **Export Features** with **Use the filtered records** enabled.
 - Save the output into the project geodatabase (for example, as `Borehole`).
@@ -34,7 +34,7 @@ The MultiPatch brought in from the Civil 3D drawing ([previous tutorial](arcgis-
 
 <figure><img src="../.gitbook/assets/AGP_Extract_03_Export_Boreholes.png" alt=""><figcaption><p>Export Features using the filtered records</p></figcaption></figure>
 
-### Step 4: Repeat for the 3D model
+## Step 4: Repeat for the 3D model
 
 - Change the definition query to **Layer begins with** `VOL`.
 - Confirm only the model volumes display, then **Export Features** again (for example, as `Model`).
@@ -43,7 +43,7 @@ The MultiPatch brought in from the Civil 3D drawing ([previous tutorial](arcgis-
 
 <figure><img src="../.gitbook/assets/AGP_Extract_05_Export_Model.png" alt=""><figcaption><p>Exporting the filtered model via Data > Export Features</p></figcaption></figure>
 
-### Step 5: Extract each soil type
+## Step 5: Extract each soil type
 
 - Use the same query-and-export pattern per soil type - for example **Layer contains the text** `CLAY` - and export each as its own feature class.
 - Repeat for every soil type of interest (limestone, chalk, sand, clay...), confirming the expected number of layers each time.

@@ -29,11 +29,17 @@ Opening a project allows you to dig deeper and view the related boreholes and dr
 
 Open the borehole treeview and make a selection of the boreholes you wish to draw in Civil 3D. Once you have made a selection, you can click on _Draw boreholes_. The selected boreholes and drillings are then imported in the Civil 3D and draw as a 3D presentation of the different groundlayers. The different layers and ground units are displayed with different colors. Furthermore, the ground descriptions recorded in GeoDin are visible as annotations on the right side of the borehole. The location's general data, such as coordinates, elevation, and EPSG code are visible on the left side.
 
-> 💡 **Tip:** switch the Civil 3D visual style to **Shaded** to make the cylinders and layer colours easier to read. Annotations can be toggled on or off per borehole, or for all boreholes at once, from the **Layer Properties** section.
+{% hint style="info" %}
+**Tip:** switch the Civil 3D visual style to **Shaded** to make the cylinders and layer colours easier to read. Annotations can be toggled on or off per borehole, or for all boreholes at once, from the **Layer Properties** section.
+{% endhint %}
 
-> ℹ️ **Attached documents.** When you save boreholes to a drawing, GeoDin® Ground also offers to export any **documents** attached to those boreholes in the database - PDF logs, photos, and reports. A separate dialog asks where to save them locally. You can skip this step if you do not need the documents offline.
+{% hint style="info" %}
+**Attached documents.** When you save boreholes to a drawing, GeoDin® Ground also offers to export any **documents** attached to those boreholes in the database - PDF logs, photos, and reports. A separate dialog asks where to save them locally. You can skip this step if you do not need the documents offline.
+{% endhint %}
 
-> ⚠️ Note: after importing, the boreholes displayed in Civil 3D are no longer connected with the GeoDin database. Changes made on the Civil 3D objects are not written back into the GeoDin database.
+{% hint style="warning" %}
+Note: after importing, the boreholes displayed in Civil 3D are no longer connected with the GeoDin database. Changes made on the Civil 3D objects are not written back into the GeoDin database.
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/Picture5.png" alt=""><figcaption></figcaption></figure>
 
