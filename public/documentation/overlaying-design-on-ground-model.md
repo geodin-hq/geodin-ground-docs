@@ -25,7 +25,9 @@ Because `Draw Surfaces and Volumes` produces **one 3D solid per soil layer** - n
 
 Each solid carries the ground-unit classification from the GeoDin® database, so the quantity you compute is directly tied to the geological meaning of the material, not just to elevation.
 
-> **Tip:** For large sites, generate surfaces and volumes only for the cluster of boreholes that covers your current design area. That keeps the drawing light and the Civil 3D volume calculations fast. You can regenerate over a different cluster any time.
+{% hint style="info" %}
+**Tip:** For large sites, generate surfaces and volumes only for the cluster of boreholes that covers your current design area. That keeps the drawing light and the Civil 3D volume calculations fast. You can regenerate over a different cluster any time.
+{% endhint %}
 
 ## Where this leaves "two worlds" behind
 

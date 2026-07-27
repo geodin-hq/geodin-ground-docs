@@ -4,7 +4,9 @@
 
 This tutorial guides you through the process of generating accurate geological surfaces and volumes in Civil 3D based on previously imported borehole data. You'll learn how to transform your borehole information into comprehensive 3D ground models.
 
-> **Note:** If you notice anything unusual or inaccurate with the 3D representation of surfaces and volumes, we'd appreciate your feedback to improve the experience. Please contact support@geodin.com, and our team will work with you to address any issues.
+{% hint style="info" %}
+**Note:** If you notice anything unusual or inaccurate with the 3D representation of surfaces and volumes, we'd appreciate your feedback to improve the experience. Please contact support@geodin.com, and our team will work with you to address any issues.
+{% endhint %}
 
 ## Preparing your drawing
 
@@ -57,9 +59,13 @@ Once processing completes, you'll see the resulting surfaces and volumes display
 Take time to review the model from different angles to ensure it meets your project requirements.
 
 <!-- src: loom/arcgis-3d-B -->
-> In the generated model, red dots mark the borehole locations.
+{% hint style="info" %}
+In the generated model, red dots mark the borehole locations.
+{% endhint %}
 
-> ℹ️ **Native Civil 3D entities.** The generated surfaces and 3D solids are native Civil 3D objects. You can edit them with Civil 3D's own tools - cut, move, reshape, trim - without needing any GeoDin®-specific commands. Because there is **one 3D solid per soil layer**, Civil 3D's volume-calculation tools can give you quantities **by soil or rock unit**, not just against a single lumped surface.
+{% hint style="info" %}
+**Native Civil 3D entities.** The generated surfaces and 3D solids are native Civil 3D objects. You can edit them with Civil 3D's own tools - cut, move, reshape, trim - without needing any GeoDin®-specific commands. Because there is **one 3D solid per soil layer**, Civil 3D's volume-calculation tools can give you quantities **by soil or rock unit**, not just against a single lumped surface.
+{% endhint %}
 
 ## Layer naming in the drawing
 

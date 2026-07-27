@@ -1,6 +1,6 @@
 # Creating Virtual Logs
 
-This tutorial guides you through the process of creating virtual logs (artificial boreholes) in Civil3D. Virtual logs allow you to create synthetic borehole data at specific locations to supplement your existing geological data, helping you build more accurate ground models.
+This tutorial guides you through the process of creating virtual logs (artificial boreholes) in Civil 3D. Virtual logs allow you to create synthetic borehole data at specific locations to supplement your existing geological data, helping you build more accurate ground models.
 
 ## Creating an empty virtual log
 
@@ -75,4 +75,6 @@ This tutorial used the **Empty** option. GeoDin® Ground offers two additional c
 
 After designing your virtual log, clicking **Add and refresh layer generation** saves the log and immediately regenerates the surfaces and volumes to reflect it. This avoids a separate trip back to **Draw Surfaces and Volumes** when you are iterating quickly. See [Updating the ground model](updating-surfaces.md) for the full regeneration flow.
 
-> ⚠️ Virtual logs - whether Empty, Nearest Borehole, or Surface Interpolation - are **not persisted to the GeoDin® database**. They exist only in the current Civil 3D drawing.
+{% hint style="warning" %}
+Virtual logs - whether Empty, Nearest Borehole, or Surface Interpolation - are **not persisted to the GeoDin® database**. They exist only in the current Civil 3D drawing.
+{% endhint %}

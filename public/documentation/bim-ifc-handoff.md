@@ -24,7 +24,9 @@ The IFC 4.3 export includes:
 
 The export is driven by Civil 3D's own IFC exporter - GeoDin® Ground does not add a separate command. You export the whole drawing as you normally would.
 
-> **Note:** IFC 4.3 is the current target. Earlier IFC schemas do not include geotechnical entities in a first-class way.
+{% hint style="info" %}
+**Note:** IFC 4.3 is the current target. Earlier IFC schemas do not include geotechnical entities in a first-class way.
+{% endhint %}
 
 ## When to use this handoff
 

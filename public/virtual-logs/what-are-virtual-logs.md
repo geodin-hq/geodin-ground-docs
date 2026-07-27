@@ -1,4 +1,4 @@
-# Enhancing Geological Modeling with Virtual Logs in Civil3D
+# What are virtual logs
 
 {% embed url="https://www.youtube.com/watch?v=vx1oGwXLacA" %}
 
@@ -6,7 +6,9 @@
 
 Virtual logs are a powerful feature in our Civil 3D plugin that allows users to create synthetic borehole data within a three-dimensional geological model environment. Unlike physical boreholes, which require costly drilling operations and are limited by accessibility, regulations, and budget constraints, virtual logs can be generated anywhere within your model to enhance the completeness and accuracy of subsurface representations.
 
-> ⚠️ Note: Virtual logs are not persisted to your GeoDin database.
+{% hint style="warning" %}
+Note: Virtual logs are not persisted to your GeoDin database.
+{% endhint %}
 
 Virtual logs function as artificial data points that interpolate geological information based on surrounding known boreholes. They enable engineers and geologists to:
 

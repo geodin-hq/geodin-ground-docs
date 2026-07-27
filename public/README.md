@@ -5,7 +5,7 @@ GeoDin® Ground is a plugin developed by GeoDin®  and Autodesk for civil and de
 
 <figure><img src=".gitbook/assets/GeoDin_Ground_Draw_Boreholes_Advanced.jpg" alt=""><figcaption></figcaption></figure>
 
-# Description
+## Description
 
 GeoDin® Ground is a comprehensive solution offered to tackle the challenges faced by design teams and geotechnical engineers.Traditional methods of incorporating ground data into designs relied a lot on using separate sources of data and file types. GeoDin® offers you the possibility of having a single source of truth for your geodata. With GeoDin® Ground, you are able to directly access this data in Civil 3D. This allows you to create designs that are safe, efficient, effective and maximize sustainability, as the risk for overengineering is limited.
 

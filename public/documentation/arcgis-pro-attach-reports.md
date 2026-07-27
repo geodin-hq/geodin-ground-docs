@@ -9,9 +9,11 @@
 
 When a Civil 3D drawing with GeoDin® Ground boreholes is brought into ArcGIS Pro ([previous tutorial](arcgis-pro-ground-model.md)), the exported PDF reports can be attached to each borehole's document annotation - so the right geotechnical report opens from the right feature. This tutorial builds a matching key and runs the two geoprocessing tools that wire the PDFs to the annotations.
 
-> For the same workflow starting from GeoDin®-exported point layers (one record per borehole), see [Attach reports](https://docs.geodin.com/integrations-and-plug-ins/overview/attach-reports) in the GeoDin® documentation. The version below handles the Civil 3D annotation layer, where each borehole has **multiple** annotation records.
+{% hint style="info" %}
+For the same workflow starting from GeoDin®-exported point layers (one record per borehole), see [Attach reports](https://docs.geodin.com/integrations-and-plug-ins/overview/attach-reports) in the GeoDin® documentation. The version below handles the Civil 3D annotation layer, where each borehole has **multiple** annotation records.
+{% endhint %}
 
-### Step 1: Locate the reports and confirm the annotations
+## Step 1: Locate the reports and confirm the annotations
 
 - On import, GeoDin® Ground creates a documents folder next to the drawing, structured by project with one subfolder per borehole, each holding that borehole's geotechnical report.
 - Copy the report PDFs into one working folder to simplify matching.
@@ -22,20 +24,20 @@ When a Civil 3D drawing with GeoDin® Ground boreholes is brought into ArcGIS Pr
 
 <figure><img src="../.gitbook/assets/AGP_Attach_02_Attribute_Table.png" alt=""><figcaption><p>The document annotation record in the attribute table</p></figcaption></figure>
 
-### Step 2: Add a key field
+## Step 2: Add a key field
 
 - Open the feature class fields view and add a new field named **AttachKey** with **Data Type = Text**. Save the changes.
 
 <figure><img src="../.gitbook/assets/AGP_Attach_03_AttachKey_Field.png" alt=""><figcaption><p>The AttachKey field added as Text</p></figcaption></figure>
 
-### Step 3: Select only the document annotations
+## Step 3: Select only the document annotations
 
 - Use **Select By Attributes** with the clause: **RefName contains the text** `document`.
 - Apply and verify the selection count before continuing - the key must only be calculated for these records.
 
 <figure><img src="../.gitbook/assets/AGP_Attach_04_Select_By_Attributes.png" alt=""><figcaption><p>Selecting the document annotation records</p></figcaption></figure>
 
-### Step 4: Calculate the key
+## Step 4: Calculate the key
 
 - With the selection active, right-click **AttachKey > Calculate Field**, set **Expression Type = Python**, expression `extract_bh(!Layer!)`, and this code block:
 
@@ -59,13 +61,13 @@ def extract_bh(layer):
 
 <figure><img src="../.gitbook/assets/AGP_Attach_06_Key_Populated.png" alt=""><figcaption><p>The populated key - borehole name plus trailing dash</p></figcaption></figure>
 
-### Step 5: Enable attachments
+## Step 5: Enable attachments
 
 - Open the feature class **Properties > Manage** and enable **Attachments** (attachments are a geodatabase feature - the annotation layer must be a geodatabase feature class, not a shapefile). Save.
 
 <figure><img src="../.gitbook/assets/AGP_Attach_07_Enable_Attachments.png" alt=""><figcaption><p>Attachments enabled on the feature class</p></figcaption></figure>
 
-### Step 6: Generate the match table
+## Step 6: Generate the match table
 
 - Run the **Generate Attachment Match Table** geoprocessing tool:
   - **Input Dataset**: the annotation layer (selected records).
@@ -74,13 +76,13 @@ def extract_bh(layer):
 
 <figure><img src="../.gitbook/assets/AGP_Attach_08_Match_Table.png" alt=""><figcaption><p>Generate Attachment Match Table with Match Pattern set to Prefix</p></figcaption></figure>
 
-### Step 7: Add the attachments
+## Step 7: Add the attachments
 
 - Run **Add Attachments** with the same input dataset, **Input Join Field** `OBJECTID`, the match table from step 6, and **Match Join Field** `MatchID`.
 
 <figure><img src="../.gitbook/assets/AGP_Attach_09_Add_Attachments.png" alt=""><figcaption><p>Add Attachments joining OBJECTID to MatchID</p></figcaption></figure>
 
-### Step 8: Verify
+## Step 8: Verify
 
 - Click a document annotation in the scene and scroll its pop-up: the geotechnical report appears as an attachment.
 - Spot-check one or two more boreholes to confirm the matching worked consistently.

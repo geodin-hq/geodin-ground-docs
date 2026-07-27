@@ -83,8 +83,12 @@ Open the published item with **Open in Scene Viewer**.
 
 <figure><img src="../.gitbook/assets/Scene_Viewer_Slice_Slide.png" alt=""><figcaption><p>A vertical slice through the model, captured as a slide in Slide Manager</p></figcaption></figure>
 
-> ℹ️ **Off the shelf.** Everything in this section is standard Esri **Scene Viewer** functionality - no GeoDin®-specific setup or add-in is needed once the scene is published. Esri's Scene Viewer documentation covers every control here in full depth.
+{% hint style="info" %}
+**Off the shelf.** Everything in this section is standard Esri **Scene Viewer** functionality - no GeoDin®-specific setup or add-in is needed once the scene is published. Esri's Scene Viewer documentation covers every control here in full depth.
+{% endhint %}
 
 ***
 
-> 🌐 **Try it live:** a public demo scene produced with this workflow is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3) - open it in Scene Viewer and explore the volumes, annotations, and Slice tool without setting anything up.
+{% hint style="info" %}
+🌐 **Try it live:** a public demo scene produced with this workflow is available at [arcg.is/0rD1OL3](https://arcg.is/0rD1OL3) - open it in Scene Viewer and explore the volumes, annotations, and Slice tool without setting anything up.
+{% endhint %}
