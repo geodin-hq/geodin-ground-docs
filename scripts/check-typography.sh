@@ -12,8 +12,8 @@
 # cleaned up; never add new ones for new content.
 #
 # Usage:
-#   scripts/check-typography.sh            # defaults to public/en (see ROOT)
-#   scripts/check-typography.sh public/en  # explicit scope
+#   scripts/check-typography.sh            # defaults to public (see ROOT)
+#   scripts/check-typography.sh public  # explicit scope
 #
 # Uses perl for the Unicode character class (portable: macOS grep lacks -P).
 
