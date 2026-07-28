@@ -22,6 +22,13 @@ _Released: 18 December 2025_
 
 <!-- src: adhoc/2026-07-28_website-drift -->
 
+## v1.5.18.0
+_Released: 7 October 2025_
+
+Maintenance release - no functional changes over v1.5.17; the feature set listed on the Autodesk Marketplace is unchanged (Civil 3D 2025 and 2026, virtual logs in metric units).
+
+<!-- src: marketplace/autodesk-marketplace-geodin-ground-listing#version-history -->
+
 ## v1.5.17
 _Released: 18 september, 2025_  
 **What's New:**
