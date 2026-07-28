@@ -6,12 +6,21 @@ _Released: 24 June 2026_
 
 **What's New:**
 - Added compatibility with Autodesk Civil 3D 2027.
+- Added support for GeoDin® object types based on the SEP3 and EN ISO standards.
 
 {% hint style="info" %}
 For the latest released version and full Civil 3D compatibility list at any time, see the [GeoDin® Ground listing on Autodesk Marketplace](https://marketplace.autodesk.com/apps/e980e6d6-57f3-4de3-b311-0da8181b0ff6).
 {% endhint %}
 
 <!-- src: spec/autodesk-marketplace-geodin-ground-listing -->
+
+## v1.6.2.0
+_Released: 18 December 2025_
+
+**What's New:**
+- Virtual logs can now be drawn in imperial units as well as metric, in Civil 3D 2025 and 2026.
+
+<!-- src: adhoc/2026-07-28_website-drift -->
 
 ## v1.5.17
 _Released: 18 september, 2025_  
