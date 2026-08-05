@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """check-structure.py - mechanizable checks for the GeoDin docs house structure.
 
-Checks (per content root, default public/en):
+Checks (per content root, default public):
   1. Every SUMMARY.md entry resolves to an existing file.
   2. Every .md page under the root is referenced in SUMMARY.md (no orphans).
   3. SUMMARY nesting depth: at most two levels of subpages (GitBook guidance;
@@ -14,7 +14,7 @@ Informational in CI at first (continue-on-error) - promote to required once
 pre-existing findings are triaged.
 
 Usage:
-    python3 scripts/check-structure.py            # defaults to public/en
+    python3 scripts/check-structure.py            # defaults to public
     python3 scripts/check-structure.py public
 """
 import os
