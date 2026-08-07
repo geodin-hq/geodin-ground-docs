@@ -16,6 +16,10 @@ The ground model in ArcGIS Pro ([Bringing the ground model into ArcGIS Pro](arcg
 - The **Borehole** point feature class ([extracted from the MultiPatch](arcgis-pro-extract-features.md)), added with a single symbol and the borehole-name label so each location reads clearly on the ground surface.
 - An ArcGIS Online account with publishing privileges.
 
+{% hint style="info" %}
+**DEM source:** the terrain beneath the model in the videos and in the published demo scene is U.S. Geological Survey (USGS) 1 Meter DEM, obtained from [The National Map Downloader](https://apps.nationalmap.gov/downloader/). It carries through from the elevation surface set in the [first tutorial](arcgis-pro-ground-model.md#step-4-set-up-elevation), and it is publicly available, so you can download the same dataset to follow along.
+{% endhint %}
+
 ### Step 1: Convert elevations to meters
 
 Web scenes expect metric elevations. If the drawing's elevations are in feet:
