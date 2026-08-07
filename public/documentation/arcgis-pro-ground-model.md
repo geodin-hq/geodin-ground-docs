@@ -41,6 +41,10 @@ This tutorial walks you through opening a Civil 3D drawing that contains GeoDinÂ
 - In the **Contents** pane, expand **Elevation Surfaces > Ground**.
 - Keep the default **WorldElevation3D** surface, or remove it and add your own DEM (for example, a 1 m resolution dataset) for accurate alignment between the model and the terrain.
 
+{% hint style="info" %}
+**DEM source:** the elevation data shown in the video is U.S. Geological Survey (USGS) 1 Meter DEM, obtained from [The National Map Downloader](https://apps.nationalmap.gov/downloader/). It is publicly available, so you can download the same dataset to follow along.
+{% endhint %}
+
 ### Step 5: Enable underground navigation
 
 - Select **Ground**, then open **Elevation Surface Layer** in the ribbon.
