@@ -16,13 +16,19 @@ When `Draw Surfaces and Volumes` interpolates between boreholes, it matches laye
 
 ### Report-quality geological hatching lives in GeoDin®
 
-Inside Civil 3D, soil units are communicated through **Civil 3D layer colours only**. Wrapping a cylinder with a standards-compliant hatch pattern (for example, a full USCS pattern) is not available out-of-the-box.
+Inside Civil 3D, soil units are communicated through **Civil 3D layer colors only**. Wrapping a cylinder with a standards-compliant hatch pattern (for example, a full USCS pattern) is not available out-of-the-box.
 
 **Workaround today:** for a legal-quality, standards-compliant cross-section, produce it in GeoDin® itself, which supports 11 international hatching standards.
 
-### Some data in the GeoDin® database is not yet visualised
+### Some data in the GeoDin® database is not yet visualized
 
 GeoDin® Ground currently does not render samples, classification test results, CPT detail, SPT values, or groundwater readings inside Civil 3D. The full record remains available in GeoDin® and via attached documents. See [What comes across from the GeoDin® database](../documentation/what-comes-across.md) for the full list.
+
+### IFC export uses generic terrain elements
+
+When a drawing is exported to IFC, ground units are written as **generic terrain elements** rather than IFC 4.3's dedicated geotechnical entities such as boreholes and strata. The geometry is faithful and the file is valid IFC 4.3, but a downstream consumer cannot query the model by geotechnical entity type.
+
+**Workaround today:** ground units remain distinguishable by their layer names and colors, which follow a predictable convention. See [How ground units are identified](../documentation/bim-ifc-handoff.md#how-ground-units-are-identified). <!-- src: loom/ifc-export#ifc-entity-types -->
 
 ### No dedicated cross-section command inside the plug-in
 
@@ -50,4 +56,4 @@ Improved ability to combine geophysical datasets with borehole-derived ground mo
 
 ---
 
-For current release notes, see [Release Notes](release-notes.md). If there is a limitation that blocks your work, [let us know](get-support.md) - the team uses customer input directly to prioritise the roadmap.
+For current release notes, see [Release Notes](release-notes.md). If there is a limitation that blocks your work, [let us know](get-support.md) - the team uses customer input directly to prioritize the roadmap.
