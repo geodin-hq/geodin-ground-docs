@@ -46,7 +46,7 @@ Identification therefore rests on the **presentation layer name and color** atta
 | `VOL-` | `VOL-GRP1-1 (SAND)` | Volumes |
 | `LOC_` | `LOC_BASE-BH03-BASIC`, `LOC_DTL-BH01-DETAILED` | Borehole locations |
 
-A consumer that cannot read a formal classification can separate surfaces, volumes, and boreholes by matching on these prefixes. <!-- src: loom/ifc-export#layer-naming -->
+A consumer can separate surfaces, volumes, and boreholes by matching on these prefixes. <!-- src: loom/ifc-export#layer-naming -->
 
 {% hint style="info" %}
 Ground units export as generic terrain elements, not as dedicated geotechnical entity types. See [Known limitations and roadmap](../support/known-limitations-and-roadmap.md).
