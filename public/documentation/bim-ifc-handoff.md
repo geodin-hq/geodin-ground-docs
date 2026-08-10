@@ -52,25 +52,6 @@ A consumer can separate surfaces, volumes, and boreholes by matching on these pr
 Ground units export as generic terrain elements, not as dedicated geotechnical entity types. See [Known limitations and roadmap](../support/known-limitations-and-roadmap.md).
 {% endhint %}
 
-### Properties recorded on the project
-
-The export attaches a property set named `Custom_Properties` to the IFC **project** - not to individual elements. A viewer that shows properties per selected element will not display it; to find it, search the `.ifc` text for `Custom_Properties`.
-
-The following property names were present:
-
-- `UUID`
-- `GEODIN_SELETED_DATABASE`
-- `GEODIN_BOREHOLE_DIAMETER`
-- `GEODIN_BOREHOLE_HEIGHT_MULTIPLIER`
-- `GEODIN_SURFACE_POINT_SPREAD_SIZE`
-- `GEODIN_SURFACE_POINT_SPREAD_NUM_POINTS`
-
-<!-- src: loom/ifc-export#property-set -->
-
-{% hint style="warning" %}
-**Property name spelling:** `GEODIN_SELETED_DATABASE` is not a docs typo - the property name is misspelled in the file itself. A parser reading these properties must match the name as written.
-{% endhint %}
-
 ### Before you send the file on
 
 An `.ifc` file is plain text and can be opened in any text editor. Two things to check when the recipient is outside your organization:
