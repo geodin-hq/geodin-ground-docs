@@ -24,11 +24,11 @@ Inside Civil 3D, soil units are communicated through **Civil 3D layer colors onl
 
 GeoDin® Ground currently does not render samples, classification test results, CPT detail, SPT values, or groundwater readings inside Civil 3D. The full record remains available in GeoDin® and via attached documents. See [What comes across from the GeoDin® database](../documentation/what-comes-across.md) for the full list.
 
-### IFC export uses generic terrain elements
+### IFC export writes ground units as generic terrain elements
 
-When a drawing is exported to IFC, ground units are written as **generic terrain elements** rather than IFC 4.3's dedicated geotechnical entities such as boreholes and strata. The geometry is faithful and the file is valid IFC 4.3, but a downstream consumer cannot query the model by geotechnical entity type.
+When a drawing is exported to IFC, ground units are written as **generic terrain elements** carrying the unit name, rather than as a dedicated geotechnical entity type. A downstream consumer cannot therefore query the model by geotechnical entity type.
 
-**Workaround today:** ground units remain distinguishable by their layer names and colors, which follow a predictable convention. See [How ground units are identified](../documentation/bim-ifc-handoff.md#how-ground-units-are-identified). <!-- src: loom/ifc-export#ifc-entity-types -->
+**Workaround today:** ground units stay distinguishable by the presentation layer name and color attached to each element. See [How ground units are identified](../documentation/bim-ifc-handoff.md#how-ground-units-are-identified). <!-- src: loom/ifc-export#entity-type-limitation -->
 
 ### No dedicated cross-section command inside the plug-in
 
