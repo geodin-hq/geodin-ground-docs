@@ -8,15 +8,19 @@ description: >-
 
 A Civil 3D drawing containing a GeoDin® Ground model can be exported to IFC. The ground model - surfaces, volumes, and boreholes - is written into the IFC file, so a downstream BIM consumer receives the ground alongside the rest of the drawing's content. <!-- src: loom/ifc-export -->
 
+## Requirements
+
+- The **Civil 3D IFC 4.3 Import/Export Extension** must be installed before the export commands are available. Download it from the [Autodesk support article](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Where-to-download-Civil-3D-IFC-4-3-Import-Export-Extension.html).
+
 ## Running the export
 
-The export is driven by Civil 3D's own IFC exporter. GeoDin® Ground does not add an IFC export command of its own; it has a separate ribbon tab.
+The export is driven by the Civil 3D IFC 4.3 Import/Export Extension, which must be installed separately in Civil 3D. GeoDin® Ground does not add an IFC export command of its own; it has a separate ribbon tab.
 
 On the **Add-ins** ribbon tab, open the **IFC Infrastructure** panel and choose **Export to IFC**, then choose a location and file name for the `.ifc`. <!-- src: loom/ifc-export#export-command -->
 
-<figure><img src="../.gitbook/assets/ifc-export-ribbon.png" alt="Civil 3D Add-ins ribbon tab showing the IFC Infrastructure panel with Set IFC Base Point, Export to IFC, and Import from IFC commands"><figcaption><p>The <strong>IFC Infrastructure</strong> panel on the <strong>Add-ins</strong> tab, with the separate <strong>GeoDin® Ground</strong> tab alongside it. These are Civil 3D's own IFC commands, not the plug-in's.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/ifc-export-ribbon2.png" alt="Civil 3D Add-ins ribbon tab showing the IFC Infrastructure panel with Set IFC Base Point, Export to IFC, and Import from IFC commands"><figcaption><p>The <strong>IFC Infrastructure</strong> panel on the <strong>Add-ins</strong> tab, with the separate <strong>GeoDin® Ground</strong> tab alongside it. These are IFC 4.3 Import/Export Extension commands, not the GeoDin® Ground plug-in's.</p></figcaption></figure>
 
-The same panel also contains **Set IFC Base Point**, **Import from IFC**, **Assign Linear Positioning**, and **Remove Linear Positioning**. These are Autodesk commands; see Autodesk's documentation for what they do. <!-- src: loom/ifc-export#ribbon -->
+The same panel also contains the buttons **Set IFC Base Point**, **Import from IFC**, **Assign Linear Positioning**, and **Remove Linear Positioning**. The function of these buttons is outside the scope of this document; see Autodesk's documentation for what these commands do. <!-- src: loom/ifc-export#ribbon -->
 
 Each export writes a JSON log file next to the `.ifc`, named after it - for example, `Drawing1a.ifc` and `Drawing1a_log.json`. <!-- src: loom/ifc-export#export-outputs -->
 
@@ -36,9 +40,9 @@ Ground model geometry arrives as **triangulated meshes**, not parametric solids:
 
 ### How ground units are identified
 
-Ground elements are written as **generic terrain elements**. Each carries its unit name - for example, `GRP1-1 (Sand) TOP`. <!-- src: loom/ifc-export#entity-type -->
+Ground elements are written as **generic terrain elements**. Each carries its layer name - for example, `SRFC-GRP1-1 (Sand) TOP`. (Top Surface of a volume)<!-- src: loom/ifc-export#entity-type -->
 
-Identification therefore rests on the **presentation layer name and color** attached to each element, carried over from the Civil 3D layers GeoDin® Ground drew them on. Three layer prefixes were observed in the exported file:
+Identification therefore rests on the **presentation layer name and color** attached to each element, carried over from the Civil 3D layers GeoDin® Ground drew them on. Three layer prefixes can be observed in the exported file:
 
 | Prefix | Observed example | Content |
 |---|---|---|
@@ -50,6 +54,22 @@ A consumer can separate surfaces, volumes, and boreholes by matching on these pr
 
 {% hint style="info" %}
 Ground units export as generic terrain elements, not as dedicated geotechnical entity types. See [Known limitations and roadmap](../support/known-limitations-and-roadmap.md).
+{% endhint %}
+
+### Properties recorded on the project
+
+The export adds new `Custom_Properties` to the Civil 3D drawing. The values of these will appear in the exported ifc file. These properties can be amended in Civil 3D and they will appear in subsequent exports.
+
+The property names are:
+
+- `IfcProject_GlobalId`
+- `IfcFacility_GlobalId`
+- `IfcFacility_Name`
+
+<!-- src: loom/ifc-export#property-set -->
+
+{% hint style="warning" %}
+**GeoDin® Ground does not set or update these properties.** 
 {% endhint %}
 
 ### Before you send the file on
