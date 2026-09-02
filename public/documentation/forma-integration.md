@@ -25,9 +25,18 @@ The sync happens through a free Autodesk tool called the **Desktop Connector**, 
 
 <figure><img src="../.gitbook/assets/forma/detailed-flow.png" alt="Detailed workflow diagram showing the eight steps from creating a Forma project through to colleagues viewing borehole reports in a browser"><figcaption><p>The full workflow at a glance: from creating the Forma project and setting up Desktop Connector, through to colleagues viewing borehole reports in a browser.</p></figcaption></figure>
 
+1. Create a project in Forma
+2. Add the project to Desktop Connector (creates a local sync folder)
+3. Open Civil 3D and connect to your GeoDin database
+4. Load and draw the boreholes, 
+5. Save the drawing into the Desktop Connector sync folder.
+6. Build the ground model
+7. Confirm the sync - icons turn green when upload is complete
+8. Check the drawing and borehole reports in Forma
+
 ### Step 1: Create a project in Forma
 
-Open Autodesk Forma in your browser and create a new project. Give it a name that matches your site (for example, *Ashcombe Road*). Make sure any colleagues who need access are added as members.
+Open Autodesk Forma in your browser and create a new project. Give it a name that matches your site (for example, *Denver*). Make sure any colleagues who need access are added as members.
 
 <figure><img src="../.gitbook/assets/forma/forma-ui.png" alt="Autodesk Forma project list in the browser showing an example site project"><figcaption><p>The Forma project list. Create a project for the site and add any colleagues who need access as members.</p></figcaption></figure>
 
@@ -51,7 +60,7 @@ Select your database - in this example the *Denver* demo database is used.
 
 <figure><img src="../.gitbook/assets/forma/Geodin-Ground-select-denver-db.png" alt="GeoDin Ground database selection dialog showing the Denver demo database"><figcaption><p>GeoDin Ground database selection. Choose the database for your site.</p></figcaption></figure>
 
-### Step 4: Load and draw the boreholes
+### Step 4: Load and draw the boreholes, 
 
 Select the boreholes for your site from the GeoDin database and draw them into the Civil 3D drawing. GeoDin Ground places each borehole at its correct plan position and adds the layer and borehole data.
 
@@ -61,13 +70,7 @@ Select the boreholes for your site from the GeoDin database and draw them into t
 
 <figure><img src="../.gitbook/assets/forma/boreholes-drawn-in-civil3d2.png" alt="Closer view of the Civil 3D drawing showing borehole detail and layer data"><figcaption><p>A closer view showing borehole detail and layer data.</p></figcaption></figure>
 
-### Step 5: Build the ground model
-
-Once you have all the borehole data you need, use GeoDin Ground to create the ground model surface. You can view the result in Civil 3D before saving.
-
-<figure><img src="../.gitbook/assets/forma/ground-model-in-civil3d.png" alt="Civil 3D showing the generated ground model surface alongside the borehole sticks"><figcaption><p>The ground model surface generated from borehole data, visible in Civil 3D before saving.</p></figcaption></figure>
-
-### Step 6: Save the drawing to the Forma sync folder
+### Step 5: Save the drawing to the Forma sync folder
 
 This is the key step. When you save the drawing, **save it into the Desktop Connector folder** created in step 2 - not your usual project folder.
 
@@ -78,6 +81,13 @@ As soon as you save, GeoDin Ground automatically exports all the borehole report
 <figure><img src="../.gitbook/assets/forma/technical-reports-saved-in-Forma-sync-folder-alongside-drawing.png" alt="Windows Explorer showing the DWG file and a GeoDin Ground documents sub-folder in the Desktop Connector sync folder"><figcaption><p>GeoDin Ground creates a documents sub-folder next to the DWG and exports each borehole's PDF reports into it automatically.</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/forma/technical-reports-saved-in-Forma-sync-folder-alongside-drawing2.png" alt="File listing inside the GeoDin Ground documents folder showing exported PDF borehole reports"><figcaption><p>The exported borehole reports inside the documents sub-folder.</p></figcaption></figure>
+
+### Step 6: Build the ground model
+
+Once you have all the borehole data you need, use GeoDin Ground to create the ground model surface. You can view the result in Civil 3D before saving.
+
+<figure><img src="../.gitbook/assets/forma/ground-model-in-civil3d.png" alt="Civil 3D showing the generated ground model surface alongside the borehole sticks"><figcaption><p>The ground model surface generated from borehole data, visible in Civil 3D before saving.</p></figcaption></figure>
+
 
 ### Step 7: Confirm the sync
 
