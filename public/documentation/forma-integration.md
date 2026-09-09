@@ -80,14 +80,11 @@ As soon as you save, GeoDin Ground automatically exports all the borehole report
 
 <figure><img src="../.gitbook/assets/forma/technical-reports-saved-in-Forma-sync-folder-alongside-drawing.png" alt="Windows Explorer showing the DWG file and a GeoDin Ground documents sub-folder in the Desktop Connector sync folder"><figcaption><p>GeoDin Ground creates a documents sub-folder next to the DWG and exports each borehole's PDF reports into it automatically.</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/forma/technical-reports-saved-in-Forma-sync-folder-alongside-drawing2.png" alt="File listing inside the GeoDin Ground documents folder showing exported PDF borehole reports"><figcaption><p>The exported borehole reports inside the documents sub-folder.</p></figcaption></figure>
-
 ### Step 6: Build the ground model
 
 Once you have all the borehole data you need, use GeoDin Ground to create the ground model surface. You can view the result in Civil 3D before saving.
 
 <figure><img src="../.gitbook/assets/forma/ground-model-in-civil3d.png" alt="Civil 3D showing the generated ground model surface alongside the borehole sticks"><figcaption><p>The ground model surface generated from borehole data, visible in Civil 3D before saving.</p></figcaption></figure>
-
 
 ### Step 7: Confirm the sync
 
